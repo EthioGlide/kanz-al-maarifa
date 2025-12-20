@@ -20,26 +20,47 @@ class KnowledgeTreasury {
         this.searchSuggestions = [];
         this.contentFilters = { category: 'all', sort: 'date' };
         this.observers = [];
+        this.cachedElements = null;
+        this.searchQuery = '';
         this.init();
     }
 
     init() {
+        console.log('Initializing KnowledgeTreasury...');
         this.loadTranslations().then(() => {
+            console.log('Translations loaded successfully');
             this.applyLanguage(this.currentLanguage);
+            this.cachedElements = document.querySelectorAll('[data-translate]');
+            console.log('Found', this.cachedElements.length, 'translatable elements');
             this.setupEventListeners();
             this.setupIntersectionObserver();
             this.setupScrollEffects();
             this.showWelcomeNotification();
+        }).catch(error => {
+            console.error('Failed to initialize:', error);
         });
     }
 
     // تحميل ملف الترجمات
-    async loadTranslations() {
+    async loadTranslations(retryCount = 0) {
         try {
+            console.log('Loading translations from translations.json...');
             const response = await fetch('translations.json');
+            console.log('Fetch response status:', response.status);
+            if (!response.ok) throw new Error('Network response was not ok');
             this.translations = await response.json();
+            console.log('Translations loaded:', Object.keys(this.translations));
         } catch (error) {
             console.error('فشل في تحميل ملف الترجمات:', error);
+            if (retryCount < 3) {
+                console.log(`إعادة المحاولة ${retryCount + 1} لتحميل الترجمات...`);
+                setTimeout(() => this.loadTranslations(retryCount + 1), 1000);
+            } else {
+                console.error('Failed to load translations after retries');
+                this.showNotification('error', {}, 'error');
+                // Fallback to empty object
+                this.translations = {};
+            }
         }
     }
 
@@ -63,23 +84,28 @@ class KnowledgeTreasury {
         this.updateLanguageButtons(lang);
 
         // إشعار تغيير اللغة
-        this.showNotification('languageChange', { lang: lang === 'ar' ? 'العربية' : 'አማርኛ' }, 'info');
+        const langName = lang === 'ar' ? 'العربية' : lang === 'en' ? 'English' : 'አማርኛ';
+        this.showNotification('languageChange', { lang: langName }, 'info');
     }
 
     // ترجمة الصفحة
     translatePage(lang) {
-        const elements = document.querySelectorAll('[data-translate]');
-        elements.forEach(element => {
-            const key = element.getAttribute('data-translate');
-            const translation = this.getTranslation(key, lang);
-            if (translation) {
-                if (element.tagName === 'INPUT' && element.type === 'text') {
-                    element.placeholder = translation;
-                } else {
-                    element.textContent = translation;
+        try {
+            this.cachedElements.forEach(element => {
+                const key = element.getAttribute('data-translate');
+                const translation = this.getTranslation(key, lang);
+                if (translation) {
+                    if (element.tagName === 'INPUT' && element.type === 'text') {
+                        element.placeholder = translation;
+                    } else {
+                        element.textContent = translation;
+                    }
                 }
-            }
-        });
+            });
+        } catch (error) {
+            console.error('خطأ في ترجمة الصفحة:', error);
+            this.showNotification('error', {}, 'error');
+        }
     }
 
     // الحصول على الترجمة
@@ -129,7 +155,12 @@ class KnowledgeTreasury {
             <button class="notification-close">&times;</button>
         `;
 
-        document.body.appendChild(notification);
+        try {
+            document.body.appendChild(notification);
+        } catch (error) {
+            console.error('خطأ في عرض الإشعار:', error);
+            return;
+        }
 
         // تشغيل صوت الإشعار
         this.playNotificationSound();
@@ -141,19 +172,26 @@ class KnowledgeTreasury {
         setTimeout(() => this.removeNotification(notification), 5000);
 
         // إزالة عند النقر على زر الإغلاق
-        notification.querySelector('.notification-close').addEventListener('click', () => {
-            this.removeNotification(notification);
-        });
+        const closeBtn = notification.querySelector('.notification-close');
+        if (closeBtn) {
+            closeBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                this.removeNotification(notification);
+            });
+        }
     }
 
     // وظيفة تشغيل صوت الإشعار
     playNotificationSound() {
         const audio = document.getElementById('notificationSound');
+        console.log('Notification audio element:', audio);
         if (audio) {
-            audio.currentTime = 0; // إعادة تشغيل من البداية
+            console.log('Attempting to play notification sound');
             audio.play().catch(error => {
-                console.log('تعذر تشغيل الصوت:', error);
+                console.error('فشل في تشغيل صوت الإشعار:', error);
             });
+        } else {
+            console.warn('Notification audio element not found');
         }
     }
 
@@ -209,10 +247,11 @@ class KnowledgeTreasury {
     }
 
     generateSearchSuggestions(query) {
-        // محاكاة اقتراحات البحث (في التطبيق الحقيقي، سيتم جلبها من API)
+        // اقتراحات البحث من المحتوى الإسلامي
         const allContent = [
-            'علم الفلك', 'الذكاء الاصطناعي', 'التاريخ القديم', 'الأدب العربي',
-            'الصحة النفسية', 'البرمجة', 'الفيزياء', 'الكيمياء'
+            'تفسير القرآن', 'حديث نبوي', 'فقه إسلامي', 'عقيدة إسلامية',
+            'تزكية النفس', 'دعوة إسلامية', 'سيرة النبي', 'علوم الحديث',
+            'أصول الفقه', 'التصوف الإسلامي', 'الأخلاق الإسلامية'
         ];
         this.searchSuggestions = allContent.filter(item =>
             item.toLowerCase().includes(query.toLowerCase())
@@ -251,42 +290,127 @@ class KnowledgeTreasury {
             return;
         }
 
-        // محاكاة نتائج البحث (في التطبيق الحقيقي، سيتم جلبها من API)
-        const mockResults = Math.floor(Math.random() * 50) + 1;
-        this.showNotification('searchResults', { count: mockResults, query }, 'success');
+        try {
+            const contentCards = document.querySelectorAll('#latest .content-card');
+            let matchCount = 0;
 
-        // هنا يمكن إضافة منطق لعرض النتائج
+            contentCards.forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const description = card.querySelector('.card-description').textContent.toLowerCase();
+                const author = card.querySelector('.card-meta span:first-child').textContent.toLowerCase();
+
+                const matches = title.includes(query.toLowerCase()) ||
+                               description.includes(query.toLowerCase()) ||
+                               author.includes(query.toLowerCase());
+
+                card.style.display = matches ? 'block' : 'none';
+                if (matches) matchCount++;
+            });
+
+            if (matchCount > 0) {
+                this.showNotification('searchResults', { count: matchCount, query }, 'success');
+            } else {
+                this.showNotification('noResults', {}, 'warning');
+            }
+        } catch (error) {
+            console.error('خطأ في البحث:', error);
+            this.showNotification('error', {}, 'error');
+        }
     }
 
     // المرشحات والترتيب
     setupFilters() {
-        const filterButtons = document.querySelectorAll('#latest .filters button');
-        filterButtons.forEach(button => {
-            button.addEventListener('click', (e) => {
-                const filterType = e.target.getAttribute('data-filter') || e.target.textContent.toLowerCase();
-                this.applyFilter(filterType);
+        const categoryFilter = document.getElementById('categoryFilter');
+        const typeFilter = document.getElementById('typeFilter');
+        const languageFilter = document.getElementById('languageFilter');
+
+        if (categoryFilter) {
+            categoryFilter.addEventListener('change', (e) => {
+                this.applyFilter('category', e.target.value);
             });
-        });
+        }
+
+        if (typeFilter) {
+            typeFilter.addEventListener('change', (e) => {
+                this.applyFilter('type', e.target.value);
+            });
+        }
+
+        if (languageFilter) {
+            languageFilter.addEventListener('change', (e) => {
+                this.applyFilter('language', e.target.value);
+            });
+        }
     }
 
-    applyFilter(filterType) {
-        this.contentFilters.sort = filterType;
-        this.showNotification('filterApplied', { filter: filterType }, 'info');
+    applyFilter(filterType, filterValue) {
+        console.log('Applying filter:', filterType, filterValue);
+        this.contentFilters[filterType] = filterValue;
+        this.showNotification('filterApplied', { filter: filterValue }, 'info');
 
-        // محاكاة ترتيب المحتوى
-        const contentCards = document.querySelectorAll('#latest .content-card');
-        const sortedCards = Array.from(contentCards).sort((a, b) => {
-            if (filterType === 'date') {
-                return Math.random() - 0.5; // محاكاة
-            } else if (filterType === 'popularity') {
-                return Math.random() - 0.5; // محاكاة
-            }
-            return 0;
-        });
+        try {
+            const contentCards = document.querySelectorAll('#latest .content-card');
+            console.log('Found', contentCards.length, 'content cards to filter');
 
-        const contentGrid = document.querySelector('#latest .content-grid');
-        contentGrid.innerHTML = '';
-        sortedCards.forEach(card => contentGrid.appendChild(card));
+            contentCards.forEach(card => {
+                let showCard = true;
+
+                // First, check if card matches search query (if any)
+                if (this.searchQuery) {
+                    const title = card.querySelector('h3').textContent.toLowerCase();
+                    const description = card.querySelector('.card-description').textContent.toLowerCase();
+                    const author = card.querySelector('.card-meta span:first-child').textContent.toLowerCase();
+                    const matchesSearch = title.includes(this.searchQuery.toLowerCase()) ||
+                                         description.includes(this.searchQuery.toLowerCase()) ||
+                                         author.includes(this.searchQuery.toLowerCase());
+                    if (!matchesSearch) showCard = false;
+                }
+
+                // Apply all active filters
+                Object.keys(this.contentFilters).forEach(key => {
+                    if (!showCard) return; // Skip if already hidden by search
+
+                    const currentFilterValue = this.contentFilters[key];
+                    if (currentFilterValue === 'all') return;
+
+                    // Filter by category
+                    if (key === 'category') {
+                        const cardTitle = card.querySelector('h3').textContent.toLowerCase();
+                        const cardDesc = card.querySelector('.card-description').textContent.toLowerCase();
+                        const content = cardTitle + ' ' + cardDesc;
+
+                        if (currentFilterValue === 'quran' && !content.includes('قرآن') && !content.includes('تفسير')) showCard = false;
+                        if (currentFilterValue === 'hadith' && !content.includes('حديث') && !content.includes('صالحين')) showCard = false;
+                        if (currentFilterValue === 'fiqh' && !content.includes('فقه')) showCard = false;
+                        if (currentFilterValue === 'aqeedah' && !content.includes('عقيد') && !content.includes('توحيد')) showCard = false;
+                    }
+
+                    // Filter by type
+                    if (key === 'type') {
+                        const contentType = card.querySelector('.content-type').textContent.toLowerCase();
+                        if (currentFilterValue === 'audio' && !contentType.includes('صوتي')) showCard = false;
+                        if (currentFilterValue === 'video' && !contentType.includes('مرئي')) showCard = false;
+                        if (currentFilterValue === 'text' && !contentType.includes('نصي')) showCard = false;
+                    }
+
+                    // Filter by language
+                    if (key === 'language') {
+                        const cardLanguage = card.getAttribute('data-language') || 'ar'; // Default to Arabic
+                        if (cardLanguage !== currentFilterValue) showCard = false;
+                    }
+                });
+
+                card.style.display = showCard ? 'block' : 'none';
+            });
+
+            // Count visible cards
+            const visibleCards = Array.from(contentCards).filter(card => card.style.display !== 'none');
+            console.log('Visible cards after filtering:', visibleCards.length);
+
+        } catch (error) {
+            console.error('خطأ في تطبيق المرشح:', error);
+            this.showNotification('error', {}, 'error');
+        }
     }
 
     // Intersection Observer للتأثيرات عند الظهور مع تحسين الأداء
@@ -306,11 +430,16 @@ class KnowledgeTreasury {
             });
         }, observerOptions);
 
-        // مراقبة العناصر التي تحتاج تأثيرات
-        const animateElements = document.querySelectorAll('.category-card, .content-card, .author-card');
-        animateElements.forEach(element => {
-            observer.observe(element);
-        });
+        try {
+            // مراقبة العناصر التي تحتاج تأثيرات
+            const animateElements = document.querySelectorAll('.category-card, .content-card, .author-card');
+            animateElements.forEach(element => {
+                observer.observe(element);
+            });
+        } catch (error) {
+            console.error('خطأ في إعداد مراقب التقاطع:', error);
+            this.showNotification('error', {}, 'error');
+        }
 
         this.observers.push(observer);
     }
@@ -321,8 +450,11 @@ class KnowledgeTreasury {
 
         // Parallax effect للخلفية
         const heroBackground = document.querySelector('.hero-background img');
+        console.log('Hero background element:', heroBackground);
         if (heroBackground) {
             heroBackground.style.willChange = 'transform';
+        } else {
+            console.warn('Hero background image not found');
         }
 
         // Scroll effects للعناوين
@@ -334,7 +466,7 @@ class KnowledgeTreasury {
         const scrollHandler = () => {
             if (!ticking) {
                 requestAnimationFrame(() => {
-                    const scrollTop = window.pageYOffset;
+                    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
                     // Parallax effect
                     if (heroBackground) {
@@ -367,22 +499,96 @@ class KnowledgeTreasury {
 
     // معالجة الأحداث العامة
     setupEventListeners() {
+        console.log('Setting up event listeners...');
+        // Cache DOM selectors
+        const searchInput = document.querySelector('.search-box input');
+        const searchButton = document.querySelector('.search-box button');
+        const categoryFilter = document.getElementById('categoryFilter');
+        const typeFilter = document.getElementById('typeFilter');
+        const languageFilter = document.getElementById('languageFilter');
+        const googlePlayBtn = document.getElementById('googlePlayBtn');
+        const appStoreBtn = document.getElementById('appStoreBtn');
+        const contentCards = document.querySelectorAll('.content-card');
+        const closeModalBtn = document.getElementById('closeModal');
+        const closeAppModalBtn = document.getElementById('closeAppModal');
+        const modals = document.querySelectorAll('.modal');
+        const readMoreLinks = document.querySelectorAll('a[href="#"]');
+        const authButtons = document.querySelectorAll('.auth-buttons button');
+        const categoryCards = document.querySelectorAll('.category-card');
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+
+        console.log('DOM elements found:', {
+            searchInput: !!searchInput,
+            searchButton: !!searchButton,
+            categoryFilter: !!categoryFilter,
+            typeFilter: !!typeFilter,
+            languageFilter: !!languageFilter,
+            googlePlayBtn: !!googlePlayBtn,
+            appStoreBtn: !!appStoreBtn,
+            contentCards: contentCards.length,
+            closeModalBtn: !!closeModalBtn,
+            closeAppModalBtn: !!closeAppModalBtn,
+            modals: modals.length,
+            readMoreLinks: readMoreLinks.length,
+            authButtons: authButtons.length,
+            categoryCards: categoryCards.length,
+            mobileMenuBtn: !!mobileMenuBtn
+        });
+
         this.setupLanguageSwitcher();
         this.setupSearch();
         this.setupFilters();
 
         // معالجة أزرار التحميل
-        const downloadButtons = document.querySelectorAll('.download-buttons a');
-        downloadButtons.forEach(button => {
-            button.addEventListener('click', (e) => {
-                e.preventDefault();
-                const platform = e.target.textContent.includes('App Store') ? 'App Store' : 'Google Play';
-                this.showNotification('downloadSoon', { platform }, 'info');
+        if (googlePlayBtn) {
+            googlePlayBtn.addEventListener('click', () => {
+                this.openAppModal();
+            });
+        }
+        if (appStoreBtn) {
+            appStoreBtn.addEventListener('click', () => {
+                this.openAppModal();
+            });
+        }
+
+        // معالجة بطاقات المحتوى لفتح المودال
+        contentCards.forEach(card => {
+            card.addEventListener('click', () => {
+                this.openContentModal(card);
             });
         });
 
+        // معالجة إغلاق المودال
+        if (closeModalBtn) {
+            closeModalBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                this.closeModal();
+            });
+        }
+        if (closeAppModalBtn) {
+            closeAppModalBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                this.closeModal();
+            });
+        }
+
+        // إغلاق المودال عند النقر خارج المحتوى
+        modals.forEach(modal => {
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    this.closeModal();
+                }
+            });
+        });
+
+        // إغلاق المودال بـ ESC
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                this.closeModal();
+            }
+        });
+
         // معالجة روابط "اقرأ المزيد" و "عرض المزيد"
-        const readMoreLinks = document.querySelectorAll('a[href="#"]');
         readMoreLinks.forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
@@ -392,7 +598,6 @@ class KnowledgeTreasury {
         });
 
         // معالجة أزرار المصادقة
-        const authButtons = document.querySelectorAll('.auth-buttons button');
         authButtons.forEach(button => {
             button.addEventListener('click', (e) => {
                 e.preventDefault();
@@ -402,7 +607,6 @@ class KnowledgeTreasury {
         });
 
         // معالجة روابط الفئات
-        const categoryCards = document.querySelectorAll('.category-card');
         categoryCards.forEach(card => {
             card.addEventListener('click', () => {
                 const categoryName = card.querySelector('h3').textContent;
@@ -410,10 +614,60 @@ class KnowledgeTreasury {
             });
         });
 
+        // معالجة زر القائمة المحمولة
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                const nav = document.getElementById('mainNav');
+                if (nav) {
+                    nav.classList.toggle('active');
+                }
+            });
+        }
+
         // تنظيف الذاكرة عند إغلاق الصفحة
         window.addEventListener('beforeunload', () => {
             this.cleanup();
         });
+    }
+
+    // Modal functionality
+    openContentModal(card) {
+        const title = card.querySelector('h3').textContent;
+        const author = card.querySelector('.card-meta span:first-child').textContent;
+        const duration = card.querySelector('.card-meta span:last-child').textContent;
+        const description = card.querySelector('.card-description').textContent;
+        const imageSrc = card.querySelector('.card-image img').src;
+
+        document.getElementById('modalTitle').textContent = title;
+        document.getElementById('modalAuthor').textContent = author;
+        document.getElementById('modalDuration').textContent = duration;
+        document.getElementById('modalDescription').textContent = description;
+        document.getElementById('modalImage').style.backgroundImage = `url(${imageSrc})`;
+
+        const modal = document.getElementById('contentModal');
+        modal.style.display = 'block';
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+
+        // Focus management
+        modal.focus();
+    }
+
+    closeModal() {
+        const modals = document.querySelectorAll('.modal');
+        modals.forEach(modal => {
+            modal.style.display = 'none';
+            modal.setAttribute('aria-hidden', 'true');
+        });
+        document.body.style.overflow = 'auto';
+    }
+
+    openAppModal() {
+        const modal = document.getElementById('appModal');
+        modal.style.display = 'block';
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        modal.focus();
     }
 
     // تنظيف الذاكرة وإزالة event listeners
@@ -433,4 +687,15 @@ class KnowledgeTreasury {
 // تهيئة التطبيق عند تحميل الصفحة
 document.addEventListener('DOMContentLoaded', () => {
     new KnowledgeTreasury();
+
+    // شريط التقدم
+    const progressBar = document.getElementById('progressBar');
+    if (progressBar) {
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = Math.min((scrollTop / docHeight) * 100, 100);
+            progressBar.style.width = scrollPercent + '%';
+        });
+    }
 });

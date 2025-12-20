@@ -1,290 +1,535 @@
 {
-  "title": {
-    "ar": "كنز المعرفة",
-    "am": "የእውቀት ሀብት"
-  },
-  "nav": {
-    "home": {
-      "ar": "الرئيسية",
-      "am": "መነሻ ገጽ"
-    },
-    "categories": {
-      "ar": "الفئات",
-      "am": "ምድቦች"
-    },
-    "latest": {
-      "ar": "أحدث المحتوى",
-      "am": "አዳዲስ ይዘት"
-    },
-    "authors": {
-      "ar": "المؤلفون",
-      "am": "የጸሓፊዎች"
-    },
-    "app": {
-      "ar": "التطبيق",
-      "am": "መተግበሪያ"
-    }
-  },
-  "auth": {
-    "login": {
-      "ar": "تسجيل الدخول",
-      "am": "ግባ"
-    },
-    "subscribe": {
-      "ar": "الاشتراك",
-      "am": "የዝግጅት ምዝገባ"
-    }
-  },
-  "hero": {
-    "title": {
-      "ar": "اكتشف كنز المعرفة",
-      "am": "የእውቀት ሀብት ያግኙ"
-    },
-    "description": {
-      "ar": "منصة معرفية عربية تقدم محتوى تعليمي متنوع مثل المقالات، الكتب الإلكترونية، والدورات التفاعلية.",
-      "am": "የእውቀት መድረክ የአረብ መድረክ የተለያዩ የሥልጠና ይዘት ያቀርባል እንደ ርዕሶች፣ የኢሌክትሮኒክ መጽሔቶች እና የተሳታፊ ኮርሶች።"
-    },
-    "searchPlaceholder": {
-      "ar": "ابحث عن المحتوى...",
-      "am": "ይዘት ያስተካክሉ..."
-    },
-    "searchButton": {
-      "ar": "بحث",
-      "am": "ፈልግ"
-    }
-  },
-  "categories": {
-    "title": {
-      "ar": "التصنيفات",
-      "am": "ምድቦች"
-    },
-    "science": {
-      "ar": "العلوم",
-      "am": "ሳይንስ"
-    },
-    "history": {
-      "ar": "التاريخ",
-      "am": "ታሪክ"
-    },
-    "technology": {
-      "ar": "التقنية",
-      "am": "ቴክኖሎጂ"
-    },
-    "literature": {
-      "ar": "الأدب",
-      "am": "ሥነ ጽሁፍ"
-    },
-    "arts": {
-      "ar": "الفنون",
-      "am": "አርትስ"
-    },
-    "health": {
-      "ar": "الصحة",
-      "am": "ጤና"
-    },
-    "desc": {
-      "science": {
-        "ar": "استكشف أسرار الكون والطبيعة من خلال مقالات علمية موثوقة ومحتوى تعليمي شامل.",
-        "am": "ከተለመዱ የሳይንስ ርዕሶች እና ሁሉን አቀፍ የሥልጠና ይዘት በኩል የአለም እና የተፈጥሮ ምሥጢራት ያስሱ።"
-      },
-      "history": {
-        "ar": "تعرف على ماضينا الثري وأحداثه المؤثرة من خلال روايات تاريخية موثوقة وتحليلات عميقة.",
-        "am": "ከተለመዱ ታሪካዊ ታሪኮች እና እንግባር ትንተናዎች በኩል ለምን ያልለን ታሪክ እና ተፅእኖ ክስተቶች ያውቁ።"
-      },
-      "technology": {
-        "ar": "تابع أحدث التطورات التكنولوجية والابتكارات التي تشكل مستقبلنا الرقمي.",
-        "am": "የቴክኖሎጂ ልምዶች እና የወደፊት ዲጂታል ህይወታችን የሚለውጡ ምልክቶች ያሳዩ።"
-      },
-      "literature": {
-        "ar": "انغمس في عالم الأدب العربي والعالمي من خلال تحليلات نقدية ومراجعات أدبية.",
-        "am": "ከአረብ እና ከዓለም አቀፍ ሥነ ጽሁፍ በኩል በአስተያየት ትንተናዎች እና ሥነ ጽሁፍ ገምግሞች ውስጥ ያልቀሱ።"
-      },
-      "arts": {
-        "ar": "استكشف الإبداع الفني في مختلف مجالاته من الرسم إلى الموسيقى والمسرح.",
-        "am": "ከስዕል እስከ ሙዚቃ እና ትዕይንት በተለያዩ መስኮች የእጅ ሥራ ፈጠራ ያስሱ።"
-      },
-      "health": {
-        "ar": "تعلم كيفية الحفاظ على صحتك الجسدية والنفسية من خلال نصائح طبية موثوقة.",
-        "am": "ከተለመዱ የህክምና ምክሮች በኩል ለሰውነት እና ለአዕምሮ ጤና እንዴት መጠበቅ እንደሚቻል ያስተምሩ።"
-      }
-    }
-  },
-  "latest": {
-    "title": {
-      "ar": "المحتوى الحديث",
-      "am": "አዳዲስ ይዘት"
-    },
-    "filters": {
-      "all": {
-        "ar": "الكل",
-        "am": "ሁሉም"
-      },
-      "date": {
-        "ar": "بالتاريخ",
-        "am": "በቀን"
-      },
-      "popularity": {
-        "ar": "بالشعبية",
-        "am": "በምትክ"
-      }
-    },
-    "content": {
-      "title1": {
-        "ar": "أسرار الكون المجهولة",
-        "am": "ያልተለመዱ የአለም ምሥጢራት"
-      },
-      "desc1": {
-        "ar": "رحلة علمية مثيرة في أعماق الفضاء وأسراره التي لم تكتشف بعد.",
-        "am": "በአለም ጥልቅ እና እስካሁን ያልተለመዱ ምሥጢራት ላይ የሳይንስ ጉዞ አስደሳች።"
-      },
-      "title2": {
-        "ar": "تاريخ الحضارات القديمة",
-        "am": "የቀድሞ ህብረተሰቦች ታሪክ"
-      },
-      "desc2": {
-        "ar": "استكشاف إرث الحضارات التي شكلت تاريخ البشرية وثقافتها.",
-        "am": "የሰው ልጅ ታሪክ እና ባህል የለወጡ ህብረተሰቦች ርህራሄ መስራት።"
-      },
-      "title3": {
-        "ar": "مستقبل الذكاء الاصطناعي",
-        "am": "የአርቲፊሻል ኢንትሊጀንስ ወደፊት"
-      },
-      "desc3": {
-        "ar": "نظرة على كيفية تغيير الذكاء الاصطناعي حياتنا ومجتمعاتنا في المستقبل.",
-        "am": "አርቲፊሻል ኢንትሊጀንስ በወደፊት ህይወታችን እና ማህበራታችን እንዴት እንደሚለውጥ አንድ እይታ።"
-      },
-      "readMore": {
-        "ar": "اقرأ المزيد",
-        "am": "ተጨማሪ ያንብቡ"
-      }
-    }
-  },
-  "authors": {
-    "title": {
-      "ar": "المؤلفون",
-      "am": "የጸሓፊዎች"
-    },
-    "author1": {
-      "ar": "د. أحمد الخالدي",
-      "am": "ዶ/ር አህመድ አልካሊዲ"
-    },
-    "desc1": {
-      "ar": "خبير في العلوم الطبيعية ومؤلف كتب تعليمية متعددة في الفيزياء والكيمياء.",
-      "am": "በተፈጥሮ ሳይንሶች ባለሞያ እና በፊዚክስ እና ኬሚስትሪ በርካታ የሥልጠና መጽሔቶች የጸሓፊ።"
-    },
-    "author2": {
-      "ar": "أ. ليلى الحسن",
-      "am": "አልሊላ አልሀሰን"
-    },
-    "desc2": {
-      "ar": "مؤرخة متخصصة في تاريخ الشرق الأوسط وكاتبة مقالات تاريخية موثوقة.",
-      "am": "በአርባዊ ምስራቅ ታሪክ ባለሞያ ታሪካዊ እና ተለመዱ ርዕሶች የምትለ።"
-    },
-    "author3": {
-      "ar": "م. عمر الزين",
-      "am": "ሙሀመድ ኦማር አልዚን"
-    },
-    "desc3": {
-      "ar": "مهندس تقني ومطور محتوى رقمي يركز على الابتكارات التكنولوجية الحديثة.",
-      "am": "የቴክኖሎጂ መሐንዲስ እና የዲጂታል ይዘት ለምድ በአዳዲስ ቴክኖሎጂ ምልክቶች ላይ የሚለምድ።"
-    },
-    "viewMore": {
-      "ar": "عرض المزيد",
-      "am": "ተጨማሪ ያሳዩ"
-    }
-  },
-  "app": {
-    "title": {
-      "ar": "التطبيق",
-      "am": "መተግበሪያ"
-    },
-    "description": {
-      "ar": "احصل على تجربة تعليمية متكاملة مع تطبيق كنز المعرفة للهواتف الذكية، يتضمن ميزات تفاعلية ومحتوى حصري.",
-      "am": "ከእጅ ስልኮች መተግበሪያ የእውቀት ሀብት ጋር ሁሉን አቀፍ የሥልጠና ልምድ ያግኙ፣ የተሳታፊ ባህሪዎች እና ልዩ ይዘት ያለው።"
-    },
-    "downloadAppStore": {
-      "ar": "تحميل من App Store",
-      "am": "ከ App Store ያውርዱ"
-    },
-    "downloadGooglePlay": {
-      "ar": "تحميل من Google Play",
-      "am": "ከ Google Play ያውርዱ"
-    }
-  },
-  "footer": {
-    "about": {
-      "ar": "عن الموقع",
-      "am": "ስለ ድህረ ገጽ"
-    },
-    "contact": {
-      "ar": "اتصل بنا",
-      "am": "አገናኝ"
-    },
-    "privacy": {
-      "ar": "سياسة الخصوصية",
-      "am": "የግል የሆነ ፖሊሲ"
-    },
-    "facebook": {
-      "ar": "فيسبوك",
-      "am": "ፌስቡክ"
-    },
-    "twitter": {
-      "ar": "تويتر",
-      "am": "ትዊተር"
-    },
-    "instagram": {
-      "ar": "إنستغرام",
-      "am": "ኢንስታግራም"
-    },
-    "copyright": {
-      "ar": "&copy; 2023 كنز المعرفة. جميع الحقوق محفوظة.",
-      "am": "&copy; 2023 የእውቀት ሀብት። ሁሉም መብቶች የተያዙ ናቸው።"
-    }
-  },
   "notifications": {
     "welcome": {
       "ar": "مرحباً بك في كنز المعرفة! استمتع برحلة التعلم والمعرفة.",
-      "am": "እንኳን ደህና መጡ ወደ የእውቀት ሀብት! የሥልጠና እና የእውቀት ጉዞ ያስደስቱ።"
+      "en": "Welcome to Knowledge Treasury! Enjoy your journey of learning and knowledge.",
+      "am": "እንኳን ደህና መጡ በእውቀት መያዣ! የማጥናት እና የእውቀት ጉዞ ይለምዱ።"
     },
     "searchEmpty": {
       "ar": "يرجى إدخال كلمة بحث صحيحة للبدء في البحث عن المحتوى.",
-      "am": "እባክዎ የፍለጋ ቃል ለመጀመር ያስገቡ ይዘት ፍለጋ።"
+      "en": "Please enter a valid search term to start searching for content.",
+      "am": "የመፈለግ ትክክለኛ ቃል ለመጀመር ያስገቡ።"
     },
     "searchResults": {
       "ar": "تم العثور على ${count} نتيجة للبحث عن \"${query}\". استكشف النتائج أدناه.",
-      "am": "\"${query}\" ፍለጋ ለ ${count} ውጤቶች ተገኙ። ውጤቶች ከታች ያስሱ።"
+      "en": "Found ${count} results for search \"${query}\". Explore the results below.",
+      "am": "${count} ውጤቶች ለ\"${query}\" ፍለጋ ተለያል። ውጤቶችን ከታች ያስሱ።"
     },
     "noResults": {
       "ar": "لم يتم العثور على نتائج مطابقة لبحثك. جرب كلمات بحث مختلفة.",
-      "am": "ለፍለጋዎ ተያያዥ ውጤቶች አልተገኙም። የተለያዩ የፍለጋ ቃላት ይሞክሩ።"
+      "en": "No matching results found for your search. Try different search terms.",
+      "am": "ለፍለጋዎ ተያያዥ ውጤቶች አልተለያም። የተለያዩ የፍለጋ ቃላት ይሞክሩ።"
     },
     "filterApplied": {
       "ar": "تم تطبيق المرشح: ${filter}. المحتوى محدث حسب اختيارك.",
-      "am": "ማጣሪያ ተተገበረ: ${filter}። ይዘት እንደ ምርጫዎ ተሻሽለ።"
+      "en": "Filter applied: ${filter}. Content updated according to your choice."
     },
     "featureDeveloping": {
       "ar": "${action} - هذه الميزة قيد التطوير وستكون متاحة قريباً إن شاء الله.",
-      "am": "${action} - ይህ ባህሪ በልማድ ላይ ነው እና በቅርቡ ያለ እንደሚሆን እንደሚሆን እንደሚሆን።"
+      "en": "${action} - This feature is under development and will be available soon, God willing."
     },
     "languageChange": {
       "ar": "تم تغيير اللغة بنجاح إلى: ${lang}. استمتع بالمحتوى باللغة المفضلة لديك.",
-      "am": "ቋንቋ በተሳካ መልክ ወደ: ${lang} ተለወጠ። በምርጫ ቋንቋ ይዘት ያስደስቱ።"
+      "en": "Language successfully changed to: ${lang}. Enjoy the content in your preferred language."
     },
     "downloadSoon": {
       "ar": "تحميل تطبيق ${platform} - قريباً إن شاء الله. تابعونا للحصول على التحديثات.",
-      "am": "መተግበሪያ ያውርዱ ${platform} - በቅርቡ እንደሚሆን እንደሚሆን። ለተሻሻለ መረጃ ያሳዩን።"
+      "en": "Download ${platform} app - coming soon, God willing. Follow us for updates."
     },
     "openDetail": {
       "ar": "فتح الصفحة التفصيلية - هذه الميزة قيد التطوير وستكون متاحة قريباً.",
-      "am": "የተያያዥ ገጽ መክፈት - ይህ ባህሪ በልማድ ላይ ነው እና በቅርቡ ያለ እንደሚሆን።"
+      "en": "Open detailed page - this feature is under development and will be available soon."
     },
     "error": {
       "ar": "حدث خطأ غير متوقع. يرجى المحاولة مرة أخرى لاحقاً.",
-      "am": "ያልተለመደ ስህተት ተለለ። እባክዎ በኋላ ለሌላ ጊዜ ይሞክሩ።"
+      "en": "An unexpected error occurred. Please try again later."
     },
     "success": {
       "ar": "تمت العملية بنجاح. شكراً لاستخدامك كنز المعرفة.",
-      "am": "ስራ በተሳካ መልክ ተሰራ። የእውቀት ሀብት ለመስጠት እናመሰግናለን።"
+      "en": "Operation completed successfully. Thank you for using Knowledge Treasury."
     }
+  },
+  "skipToMain": {
+    "ar": "تخطي إلى المحتوى الرئيسي",
+    "en": "Skip to main content"
+  },
+  "siteTitle": {
+    "ar": "كنز المعرفة",
+    "en": "Knowledge Treasury",
+    "am": "የእውቀት መያዣ"
+  },
+  "navHome": {
+    "ar": "الرئيسية",
+    "en": "Home",
+    "am": "መነሻ"
+  },
+  "navAudioLibrary": {
+    "ar": "المكتبة الصوتية",
+    "en": "Audio Library",
+    "am": "የድምጽ ቤተ መጽሔት"
+  },
+  "navVideoLibrary": {
+    "ar": "المكتبة المرئية",
+    "en": "Video Library",
+    "am": "የቪዲዮ ቤተ መጽሔት"
+  },
+  "navAuthors": {
+    "ar": "المؤلفون",
+    "en": "Authors",
+    "am": "ደራሲያን"
+  },
+  "navCategories": {
+    "ar": "التصنيفات",
+    "en": "Categories",
+    "am": "ምድቦች"
+  },
+  "navAbout": {
+    "ar": "من نحن",
+    "en": "About Us",
+    "am": "ስለ እኛ"
+  },
+  "langArabic": {
+    "ar": "العربية",
+    "en": "Arabic",
+    "am": "العربية"
+  },
+  "langEnglish": {
+    "ar": "English",
+    "en": "English",
+    "am": "English"
+  },
+  "langAmharic": {
+    "ar": "አማርኛ",
+    "en": "Amharic",
+    "am": "አማርኛ"
+  },
+  "loginBtn": {
+    "ar": "تسجيل الدخول",
+    "en": "Login"
+  },
+  "signupBtn": {
+    "ar": "إنشاء حساب",
+    "en": "Sign Up"
+  },
+  "heroTitle": {
+    "ar": "كنز المعرفة - منصة المحتوى الإسلامي الشاملة",
+    "en": "Knowledge Treasury - Comprehensive Islamic Content Platform",
+    "am": "የእውቀት መያዣ - ሙሉ ኢስላሚክ የይዘት መድረክ"
+  },
+  "heroDescription": {
+    "ar": "استمع وشاهد واقرأ آلاف الكتب والمحاضرات الإسلامية باللغتين العربية والأمهرية. منصة متكاملة تجمع بين الأصالة والحداثة.",
+    "en": "Listen, watch, and read thousands of Islamic books and lectures in Arabic and Amharic. An integrated platform combining tradition and modernity.",
+    "am": "በዓረብኛ እና በአማርኛ ለሚሆኑ ሺህዎች ኢስላሚክ መጽሔቶች እና ምክትሎች ያለው፣ ያለው እና ያንብብ። ልምድ እና አዲስነትን የሚያጣምር የተለያዩ መድረክ።"
+  },
+  "searchPlaceholder": {
+    "ar": "ابحث عن كتاب، محاضرة، مؤلف، أو موضوع...",
+    "en": "Search for a book, lecture, author, or topic..."
+  },
+  "searchBtn": {
+    "ar": "بحث",
+    "en": "Search"
+  },
+  "booksCount": {
+    "ar": "+5,000 كتاب",
+    "en": "+5,000 Books"
+  },
+  "lecturesCount": {
+    "ar": "+10,000 محاضرة",
+    "en": "+10,000 Lectures"
+  },
+  "authorsCount": {
+    "ar": "+200 مؤلف",
+    "en": "+200 Authors"
+  },
+  "categoriesTitle": {
+    "ar": "التصنيفات الرئيسية",
+    "en": "Main Categories",
+    "am": "ዋና ምድቦች"
+  },
+  "categoryQuranTitle": {
+    "ar": "التفسير وعلوم القرآن",
+    "en": "Quran Interpretation and Sciences",
+    "am": "ቁርአን ትርጉም እና ሳይንሶች"
+  },
+  "categoryQuranDesc": {
+    "ar": "شروحات وتفاسير القرآن الكريم وعلومه",
+    "en": "Explanations and interpretations of the Holy Quran and its sciences",
+    "am": "የቅዱስ ቁርአን ስርዓቶች እና ትርጉሞች እና ሳይንሶች"
+  },
+  "categoryHadithTitle": {
+    "ar": "الحديث وعلومه",
+    "en": "Hadith and its Sciences"
+  },
+  "categoryHadithDesc": {
+    "ar": "شروحات كتب الحديث والسنة النبوية وعلومها",
+    "en": "Explanations of Hadith books and Prophetic Sunnah and their sciences"
+  },
+  "categoryFiqhTitle": {
+    "ar": "الفقه وأصوله",
+    "en": "Fiqh and its Principles"
+  },
+  "categoryFiqhDesc": {
+    "ar": "كتب الفقه وأحكام الشرعية",
+    "en": "Books of Fiqh and Sharia rulings"
+  },
+  "categoryAqeedahTitle": {
+    "ar": "العقيدة والتوحيد",
+    "en": "Aqeedah and Tawheed"
+  },
+  "categoryAqeedahDesc": {
+    "ar": "كتب العقيدة الإسلامية الصحيحة ومذاهبها",
+    "en": "Books of correct Islamic Aqeedah and its schools"
+  },
+  "categoryHistoryTitle": {
+    "ar": "التاريخ الإسلامي",
+    "en": "Islamic History"
+  },
+  "categoryHistoryDesc": {
+    "ar": "كتب تاريخ الإسلام والمسلمين والحضارة الإسلامية",
+    "en": "Books of Islamic history, Muslims, and Islamic civilization"
+  },
+  "categoryTazkiyahTitle": {
+    "ar": "التزكية والأخلاق",
+    "en": "Tazkiyah and Ethics"
+  },
+  "categoryTazkiyahDesc": {
+    "ar": "كتب التصوف والسلوك والأخلاق الإسلامية",
+    "en": "Books of Sufism, behavior, and Islamic ethics"
+  },
+  "categoryDaawahTitle": {
+    "ar": "الدعوة والمناهج",
+    "en": "Daawah and Methodologies"
+  },
+  "categoryDaawahDesc": {
+    "ar": "كتب الدعوة إلى الله والمناهج الدعوية",
+    "en": "Books of calling to Allah and Daawah methodologies"
+  },
+  "latestTitle": {
+    "ar": "أحدث الإضافات",
+    "en": "Latest Additions"
+  },
+  "filterAllCategories": {
+    "ar": "جميع التصنيفات",
+    "en": "All Categories"
+  },
+  "filterQuran": {
+    "ar": "التفسير",
+    "en": "Tafsir"
+  },
+  "filterHadith": {
+    "ar": "الحديث",
+    "en": "Hadith"
+  },
+  "filterFiqh": {
+    "ar": "الفقه",
+    "en": "Fiqh"
+  },
+  "filterAqeedah": {
+    "ar": "العقيدة",
+    "en": "Aqeedah"
+  },
+  "filterType": {
+    "ar": "النوع",
+    "en": "Type"
+  },
+  "filterAudio": {
+    "ar": "صوتي",
+    "en": "Audio"
+  },
+  "filterVideo": {
+    "ar": "مرئي",
+    "en": "Video"
+  },
+  "filterText": {
+    "ar": "نصي",
+    "en": "Text"
+  },
+  "filterLanguage": {
+    "ar": "اللغة",
+    "en": "Language"
+  },
+  "filterArabic": {
+    "ar": "العربية",
+    "en": "Arabic"
+  },
+  "filterEnglish": {
+    "ar": "English",
+    "en": "English"
+  },
+  "contentTypeAudio": {
+    "ar": "صوتي",
+    "en": "Audio"
+  },
+  "contentTypeVideo": {
+    "ar": "مرئي",
+    "en": "Video"
+  },
+  "content1Title": {
+    "ar": "تفسير القرآن العظيم",
+    "en": "Tafsir of the Great Quran"
+  },
+  "content1Author": {
+    "ar": "ابن حجر",
+    "en": "Ibn Hajar"
+  },
+  "content1Duration": {
+    "ar": "15 ساعة",
+    "en": "15 hours"
+  },
+  "content1Desc": {
+    "ar": "تفسير جامع للقرآن الكريم يعتمد على التفسير بالمأثور، من أهم كتب التفسير بالأثر.",
+    "en": "A comprehensive tafsir of the Holy Quran based on narrated interpretations, one of the most important books of tafsir by narration."
+  },
+  "content2Title": {
+    "ar": "رياض الصالحين",
+    "en": "Riyad as-Salihin"
+  },
+  "content2Author": {
+    "ar": "النووي",
+    "en": "An-Nawawi"
+  },
+  "content2Duration": {
+    "ar": "8 ساعات",
+    "en": "8 hours"
+  },
+  "content2Desc": {
+    "ar": "كتاب يجمع أحاديث النبي صلى الله عليه وسلم في شتى أبواب الخير والفضائل.",
+    "en": "A book collecting the hadiths of the Prophet (peace be upon him) in various chapters of goodness and virtues."
+  },
+  "content3Title": {
+    "ar": "فقه الأكبر",
+    "en": "Al-Fiqh al-Akbar"
+  },
+  "content3Author": {
+    "ar": "شيخ جميل حليم",
+    "en": "Sheikh Jamil Haleem"
+  },
+  "content3Duration": {
+    "ar": "12 ساعة",
+    "en": "12 hours"
+  },
+  "content3Desc": {
+    "ar": "كتاب في الفقه المعرض الأحكام الفقهية مع أدلتها من الكتاب والسنة.",
+    "en": "A book in comparative fiqh presenting fiqh rulings with their evidences from the Quran and Sunnah."
+  },
+  "listenBtn": {
+    "ar": "استمع",
+    "en": "Listen"
+  },
+  "watchBtn": {
+    "ar": "شاهد",
+    "en": "Watch"
+  },
+  "downloadBtn": {
+    "ar": "حمل",
+    "en": "Download"
+  },
+  "shareBtn": {
+    "ar": "شارك",
+    "en": "Share"
+  },
+  "authorsTitle": {
+    "ar": "أبرز المؤلفين",
+    "en": "Featured Authors"
+  },
+  "author1Name": {
+    "ar": "شيخ عبدالله الهرري",
+    "en": "Sheikh Abdullah Al-Harari"
+  },
+  "author1Desc": {
+    "ar": "محدث، فقيه، ومفسر",
+    "en": "Hadith scholar, jurist, and interpreter"
+  },
+  "author2Name": {
+    "ar": "شيخ جميل حليم",
+    "en": "Sheikh Jamil Haleem"
+  },
+  "author2Desc": {
+    "ar": "فقيه، ومفسر، وكاتب",
+    "en": "Jurist, interpreter, and writer"
+  },
+  "author3Name": {
+    "ar": "شيخ رايا",
+    "en": "Sheikh Raya"
+  },
+  "author3Desc": {
+    "ar": "مفسر، ومحدث، ومؤرخ",
+    "en": "Interpreter, hadith scholar, and historian"
+  },
+  "author4Name": {
+    "ar": "النووي",
+    "en": "An-Nawawi"
+  },
+  "author4Desc": {
+    "ar": "فقيه، ومحدث، ولغوي",
+    "en": "Jurist, hadith scholar, and linguist"
+  },
+  "author5Name": {
+    "ar": "أبو حنيفة",
+    "en": "Abu Hanifa"
+  },
+  "author5Desc": {
+    "ar": "عالم إسلامي شامل، فقيه ومتكلم",
+    "en": "Comprehensive Islamic scholar, jurist and theologian"
+  },
+  "author6Name": {
+    "ar": "الغزالي",
+    "en": "Al-Ghazali"
+  },
+  "author6Desc": {
+    "ar": "فقيه، ومتكلم، وصوفي",
+    "en": "Jurist, theologian, and Sufi"
+  },
+  "author7Name": {
+    "ar": "الأشعاري",
+    "en": "Al-Ash'ari"
+  },
+  "author7Desc": {
+    "ar": "فقيه، ومحدث، وصوفي",
+    "en": "Jurist, hadith scholar, and Sufi"
+  },
+  "author8Name": {
+    "ar": "الطبري",
+    "en": "At-Tabari"
+  },
+  "author8Desc": {
+    "ar": "مفسر، ومؤرخ، وفقيه",
+    "en": "Interpreter, historian, and jurist"
+  },
+  "author9Name": {
+    "ar": "البيهقي",
+    "en": "Al-Bayhaqi"
+  },
+  "author9Desc": {
+    "ar": "مؤرخ، وكاتب سيرة",
+    "en": "Historian and biographer"
+  },
+  "author10Name": {
+    "ar": "أبو جعفر الطحاوي",
+    "en": "Abu Ja'far at-Tahawi"
+  },
+  "author10Desc": {
+    "ar": "فقيه، ومتكلم، ومحدث",
+    "en": "Jurist, theologian, and hadith scholar"
+  },
+  "author11Name": {
+    "ar": "الإمام الشافعي",
+    "en": "Imam Al-Shafi'i"
+  },
+  "author11Desc": {
+    "ar": "إمام المذهب الشافعي، فقيه",
+    "en": "Imam of the Shafi'i school, jurist"
+  },
+  "author12Name": {
+    "ar": "مالك بن أنس",
+    "en": "Malik ibn Anas"
+  },
+  "author12Desc": {
+    "ar": "إمام المذهب المالكي، محدث",
+    "en": "Imam of the Maliki school, hadith scholar"
+  },
+  "appTitle": {
+    "ar": "حمّل تطبيق كنز المعرفة",
+    "en": "Download Knowledge Treasury App"
+  },
+  "appDescription": {
+    "ar": "استمتع بتجربة أفضل مع تطبيقنا المخصص للهواتف الذكية. حمّله الآن مجاناً!",
+    "en": "Enjoy a better experience with our dedicated mobile app. Download it now for free!"
+  },
+  "downloadFrom": {
+    "ar": "حمّله من",
+    "en": "Download from"
+  },
+  "googlePlay": {
+    "ar": "Google Play",
+    "en": "Google Play"
+  },
+  "appStore": {
+    "ar": "App Store",
+    "en": "App Store"
+  },
+  "footerAboutTitle": {
+    "ar": "كنز المعرفة",
+    "en": "Knowledge Treasury"
+  },
+  "footerAboutDesc": {
+    "ar": "منصة إسلامية شاملة تقدم المحتوى الصوتي والمرئي باللغتين العربية والأمهرية. نسعى لنشر العلم الشرعي بأساليب عصرية.",
+    "en": "A comprehensive Islamic platform providing audio and video content in Arabic and Amharic. We strive to spread Sharia knowledge in modern ways."
+  },
+  "footerQuickLinksTitle": {
+    "ar": "روابط سريعة",
+    "en": "Quick Links"
+  },
+  "footerHome": {
+    "ar": "الرئيسية",
+    "en": "Home"
+  },
+  "footerAudioLibrary": {
+    "ar": "المكتبة الصوتية",
+    "en": "Audio Library"
+  },
+  "footerVideoLibrary": {
+    "ar": "المكتبة المرئية",
+    "en": "Video Library"
+  },
+  "footerAuthors": {
+    "ar": "المؤلفون",
+    "en": "Authors"
+  },
+  "footerCategories": {
+    "ar": "التصنيفات",
+    "en": "Categories"
+  },
+  "footerCategoriesTitle": {
+    "ar": "التصنيفات",
+    "en": "Categories"
+  },
+  "footerQuran": {
+    "ar": "التفسير وعلوم القرآن",
+    "en": "Quran Interpretation and Sciences"
+  },
+  "footerHadith": {
+    "ar": "الحديث وعلومه",
+    "en": "Hadith and its Sciences"
+  },
+  "footerFiqh": {
+    "ar": "الفقه وأصوله",
+    "en": "Fiqh and its Principles"
+  },
+  "footerAqeedah": {
+    "ar": "العقيدة والتوحيد",
+    "en": "Aqeedah and Tawheed"
+  },
+  "footerTazkiyah": {
+    "ar": "التزكية والأخلاق",
+    "en": "Tazkiyah and Ethics"
+  },
+  "footerContactTitle": {
+    "ar": "اتصل بنا",
+    "en": "Contact Us"
+  },
+  "footerEmail": {
+    "ar": "info@kanz-almaarifa.com",
+    "en": "info@kanz-almaarifa.com"
+  },
+  "footerPhone": {
+    "ar": "+123456789",
+    "en": "+123456789"
+  },
+  "footerAddress": {
+    "ar": "مكتبة المشاريع",
+    "en": "Maktabat Al-Mashari"
+  },
+  "footerCopyright": {
+    "ar": "© 2023 كنز المعرفة - جميع الحقوق محفوظة",
+    "en": "© 2023 Knowledge Treasury - All rights reserved"
+  },
+  "notificationTitle": {
+    "ar": "مرحباً بك في كنز المعرفة!",
+    "en": "Welcome to Knowledge Treasury!"
+  },
+  "notificationMessage": {
+    "ar": "تم تحديث المنصة بميزات جديدة. جرب البحث المتقدم!",
+    "en": "The platform has been updated with new features. Try the advanced search!"
   }
 }
