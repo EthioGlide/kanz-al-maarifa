@@ -1,0 +1,3 @@
+[submodule "KanzAlMaarifaDeploymentToken-project"]
+	path = KanzAlMaarifaDeploymentToken-project
+	url = https://gitlab.com/kanzalmaarifadeploymenttoken-group/KanzAlMaarifaDeploymentToken-project.git
