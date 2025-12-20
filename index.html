@@ -1,26 +1,25 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="منصة إسلامية شاملة تقدم المحتوى الصوتي والمرئي باللغتين العربية والأمهرية. استمع وشاهد آلاف الكتب والمحاضرات الإسلامية مجاناً.">
-    <meta name="keywords" content="محتوى إسلامي, كتب إسلامية, محاضرات, تفسير قرآن, حديث نبوي, فقه إسلامي, علم أصول, تزكية نفس, دعوة إسلامية">
-    <meta name="author" content="كنز المعرفة">
+    <meta name="description" content="منصة حكمة تقدم مترجم نوايا ذكي، مساعدين افتراضيين، ومكتبة ثقافية شاملة باللغتين العربية والأمهرية. استكشف الحكمة والمعرفة بأساليب عصرية.">
+    <meta name="keywords" content="حكمة, ذكاء اصطناعي, مترجم نوايا, مساعدين افتراضيين, مكتبة ثقافية, تعلم, معرفة, عربية, أمهرية">
+    <meta name="author" content="حكمة - Ḥikma">
     <meta name="robots" content="index, follow">
     <meta name="language" content="Arabic, Amharic">
-
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kanz-almaarifa.com/">
-    <meta property="og:title" content="كنز المعرفة - منصة المحتوى الإسلامي الشاملة">
-    <meta property="og:description" content="منصة إسلامية شاملة تقدم المحتوى الصوتي والمرئي باللغتين العربية والأمهرية. استمع وشاهد آلاف الكتب والمحاضرات الإسلامية مجاناً.">
+    <meta property="og:title" content="حكمة - Ḥikma - منصة الحكمة والذكاء الاصطناعي">
+    <meta property="og:description" content="منصة حكمة تقدم مترجم نوايا ذكي، مساعدين افتراضيين، ومكتبة ثقافية شاملة باللغتين العربية والأمهرية. استكشف الحكمة والمعرفة بأساليب عصرية.">
     <meta property="og:image" content="https://kanz-almaarifa.com/og-image.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://kanz-almaarifa.com/">
-    <meta property="twitter:title" content="كنز المعرفة - منصة المحتوى الإسلامي الشاملة">
-    <meta property="twitter:description" content="منصة إسلامية شاملة تقدم المحتوى الصوتي والمرئي باللغتين العربية والأمهرية. استمع وشاهد آلاف الكتب والمحاضرات الإسلامية مجاناً.">
+    <meta property="twitter:title" content="حكمة - Ḥikma - منصة الحكمة والذكاء الاصطناعي">
+    <meta property="twitter:description" content="منصة حكمة تقدم مترجم نوايا ذكي، مساعدين افتراضيين، ومكتبة ثقافية شاملة باللغتين العربية والأمهرية. استكشف الحكمة والمعرفة بأساليب عصرية.">
     <meta property="twitter:image" content="https://kanz-almaarifa.com/twitter-image.jpg">
 
     <!-- Structured Data -->
@@ -43,1093 +42,17 @@
     }
     </script>
 
-    <title>كنز المعرفة - منصة المحتوى الإسلامي الشاملة</title>
+    <title>حكمة - Ḥikma - منصة الحكمة والذكاء الاصطناعي</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- Preload critical resources -->
-    <link rel="preload" href="styles.css" as="style">
-    <link rel="preload" href="script.js" as="script">
-    <link rel="preload" href="https://fonts.gstatic.com/s/cairo/v31/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS8p4_RHH1.woff2" as="font" type="font/woff2" crossorigin>
-    <style>
-        :root {
-            --primary: #1a5f7a;
-            --secondary: #159895;
-            --accent: #57C5B6;
-            --light: #f8f9fa;
-            --dark: #2d3748;
-            --gold: #d4af37;
-            --text: #333;
-            --border-radius: 12px;
-            --shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-            --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
-            --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Cairo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f9fbfd;
-            color: var(--text);
-            line-height: 1.8;
-            overflow-x: hidden;
-        }
-        
-        .container {
-            width: 100%;
-            max-width: 1300px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        /* تحسين الهيدر */
-        header {
-            background: rgba(26, 95, 122, 0.95);
-            backdrop-filter: blur(10px);
-            color: white;
-            padding: 0.8rem 0;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            transition: var(--transition);
-        }
-        
-        .header-scrolled {
-            padding: 0.5rem 0;
-            background: rgba(26, 95, 122, 0.98);
-        }
-        
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-        
-        .logo h1 {
-            font-size: 2rem;
-            font-weight: 800;
-            background: linear-gradient(to right, #fff, var(--accent));
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            letter-spacing: -0.5px;
-        }
-        
-        .logo-icon {
-            font-size: 2.5rem;
-            color: var(--gold);
-            filter: drop-shadow(0 2px 5px rgba(212, 175, 55, 0.3));
-            animation: pulse 2s infinite alternate;
-        }
-        
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            100% { transform: scale(1.05); }
-        }
-        
-        /* تحسين القائمة */
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 1rem;
-        }
-        
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            transition: var(--transition);
-            padding: 0.7rem 1.2rem;
-            border-radius: var(--border-radius);
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        nav a:before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 0;
-            height: 3px;
-            background-color: var(--accent);
-            transition: width 0.3s ease;
-        }
-        
-        nav a:hover:before {
-            width: 100%;
-        }
-        
-        nav a:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-            transform: translateY(-2px);
-        }
-        
-        /* شريط اللغات المحسن */
-        .language-switcher {
-            display: flex;
-            gap: 5px;
-            background: rgba(255, 255, 255, 0.15);
-            padding: 0.3rem;
-            border-radius: var(--border-radius);
-            backdrop-filter: blur(5px);
-        }
-        
-        .lang-btn {
-            background: transparent;
-            border: none;
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: var(--transition);
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-        
-        .lang-btn.active {
-            background-color: white;
-            color: var(--primary);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-        }
-        
-        .lang-btn:hover:not(.active) {
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-        
-        /* أزرار متطورة */
-        .btn {
-            padding: 0.8rem 1.5rem;
-            border-radius: var(--border-radius);
-            border: none;
-            cursor: pointer;
-            font-weight: 600;
-            transition: var(--transition);
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 1rem;
-            position: relative;
-            overflow: hidden;
-            z-index: 1;
-        }
-        
-        .btn:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(255, 255, 255, 0.1);
-            z-index: -2;
-        }
-        
-        .btn:before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0%;
-            height: 100%;
-            background-color: rgba(255, 255, 255, 0.2);
-            transition: all 0.3s;
-            z-index: -1;
-        }
-        
-        .btn:hover:before {
-            width: 100%;
-        }
-        
-        .btn-primary {
-            background: var(--gradient);
-            color: white;
-            box-shadow: 0 6px 15px rgba(21, 152, 149, 0.3);
-        }
-        
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(21, 152, 149, 0.4);
-        }
-        
-        .btn-outline {
-            background-color: transparent;
-            border: 2px solid white;
-            color: white;
-        }
-        
-        .btn-outline:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-            transform: translateY(-3px);
-        }
-        
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            color: white;
-            font-size: 1.8rem;
-            cursor: pointer;
-            padding: 0.5rem;
-            border-radius: 8px;
-            transition: var(--transition);
-        }
-        
-        .mobile-menu-btn:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-        
-        /* قسم الهيرو المحسن */
-        .hero {
-            padding: 6rem 0 5rem;
-            background: linear-gradient(rgba(26, 95, 122, 0.85), rgba(21, 152, 149, 0.85)), url('https://images.unsplash.com/photo-1541250628459-d8f2f0157289?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            color: white;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .hero:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
-        }
-        
-        .hero h2 {
-            font-size: 3.2rem;
-            margin-bottom: 1.5rem;
-            font-weight: 800;
-            line-height: 1.2;
-            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        }
-        
-        .hero p {
-            font-size: 1.4rem;
-            max-width: 850px;
-            margin: 0 auto 3rem;
-            font-weight: 300;
-            opacity: 0.9;
-        }
-        
-        /* مربع البحث المحسن */
-        .search-box {
-            max-width: 750px;
-            margin: 0 auto;
-            position: relative;
-        }
-        
-        .search-box input {
-            width: 100%;
-            padding: 1.4rem 2rem;
-            border-radius: 50px;
-            border: none;
-            font-size: 1.2rem;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-            transition: var(--transition);
-            background: rgba(255, 255, 255, 0.95);
-        }
-        
-        .search-box input:focus {
-            outline: none;
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-            transform: translateY(-2px);
-        }
-        
-        .search-box button {
-            position: absolute;
-            left: 8px;
-            top: 50%;
-            transform: translateY(-50%);
-            background: var(--gradient);
-            border: none;
-            padding: 1rem 2rem;
-            border-radius: 50px;
-            color: white;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: 600;
-            font-size: 1.1rem;
-            box-shadow: 0 5px 15px rgba(21, 152, 149, 0.3);
-            transition: var(--transition);
-        }
-        
-        .search-box button:hover {
-            transform: translateY(-50%) scale(1.05);
-            box-shadow: 0 8px 20px rgba(21, 152, 149, 0.4);
-        }
-        
-        /* تحسين الأقسام */
-        .section-title {
-            text-align: center;
-            margin-bottom: 3.5rem;
-            color: var(--primary);
-            font-size: 2.5rem;
-            position: relative;
-            padding-bottom: 1.2rem;
-            font-weight: 800;
-        }
-        
-        .section-title:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            right: 50%;
-            transform: translateX(50%);
-            width: 120px;
-            height: 5px;
-            background: var(--gradient);
-            border-radius: 3px;
-        }
-        
-        .section-title:before {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            right: 50%;
-            transform: translateX(50%);
-            width: 80px;
-            height: 5px;
-            background: var(--accent);
-            border-radius: 3px;
-            opacity: 0.5;
-        }
-        
-        /* بطاقات التصنيفات المحسنة */
-        .categories-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 2.5rem;
-        }
-        
-        .category-card {
-            background-color: white;
-            border-radius: var(--border-radius);
-            padding: 2.5rem 2rem;
-            text-align: center;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            cursor: pointer;
-            border-top: 5px solid var(--accent);
-            position: relative;
-            overflow: hidden;
-            z-index: 1;
-        }
-        
-        .category-card:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-            background: var(--gradient);
-            z-index: -1;
-            opacity: 0;
-            transition: var(--transition);
-        }
-        
-        .category-card:hover {
-            transform: translateY(-12px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-            color: white;
-        }
-        
-        .category-card:hover:before {
-            opacity: 1;
-        }
-        
-        .category-card:hover .category-icon,
-        .category-card:hover h3,
-        .category-card:hover p {
-            color: white;
-        }
-        
-        .category-icon {
-            font-size: 3.5rem;
-            color: var(--primary);
-            margin-bottom: 1.8rem;
-            transition: var(--transition);
-        }
-        
-        .category-card h3 {
-            margin-bottom: 1.2rem;
-            color: var(--dark);
-            font-size: 1.6rem;
-            font-weight: 700;
-            transition: var(--transition);
-        }
-        
-        .category-card p {
-            color: #666;
-            font-size: 1.05rem;
-            transition: var(--transition);
-        }
-        
-        /* قسم المحتوى المحسن */
-        .content-section {
-            padding: 6rem 0;
-            background-color: #f5f9ff;
-        }
-        
-        .content-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 3rem;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-        }
-        
-        .filter-options {
-            display: flex;
-            gap: 1.2rem;
-            flex-wrap: wrap;
-        }
-        
-        .filter-select {
-            padding: 0.9rem 1.5rem;
-            border-radius: var(--border-radius);
-            border: 2px solid #e1e8f0;
-            background: white;
-            font-size: 1rem;
-            cursor: pointer;
-            font-weight: 500;
-            transition: var(--transition);
-            min-width: 160px;
-        }
-        
-        .filter-select:focus {
-            outline: none;
-            border-color: var(--accent);
-            box-shadow: 0 0 0 3px rgba(87, 197, 182, 0.2);
-        }
-        
-        .content-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 2.5rem;
-        }
-        
-        .content-card {
-            background-color: white;
-            border-radius: var(--border-radius);
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-        }
-        
-        .content-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-        }
-        
-        .card-image {
-            height: 220px;
-            background-color: #ddd;
-            background-size: cover;
-            background-position: center;
-            position: relative;
-            transition: transform 0.5s ease;
-        }
-        
-        .content-card:hover .card-image {
-            transform: scale(1.05);
-        }
-        
-        .content-type {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            background: var(--gradient);
-            color: white;
-            padding: 0.5rem 1.2rem;
-            border-radius: 30px;
-            font-size: 0.9rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-weight: 600;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .card-content {
-            padding: 2.2rem;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .card-content h3 {
-            margin-bottom: 1rem;
-            color: var(--dark);
-            font-size: 1.5rem;
-            font-weight: 700;
-            line-height: 1.4;
-        }
-        
-        .card-meta {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 1.5rem;
-            font-size: 0.95rem;
-            color: #666;
-        }
-        
-        .card-meta span {
-            display: flex;
-            align-items: center;
-            gap: 7px;
-        }
-        
-        .card-description {
-            margin-bottom: 1.8rem;
-            color: #555;
-            flex-grow: 1;
-            line-height: 1.7;
-        }
-        
-        .card-actions {
-            display: flex;
-            justify-content: space-between;
-            margin-top: auto;
-        }
-        
-        .action-btn {
-            background: none;
-            border: none;
-            cursor: pointer;
-            color: var(--primary);
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: 600;
-            padding: 0.8rem 1.2rem;
-            border-radius: var(--border-radius);
-            transition: var(--transition);
-        }
-        
-        .action-btn:hover {
-            background-color: rgba(26, 95, 122, 0.1);
-            transform: translateY(-3px);
-        }
-        
-        /* مؤلفون مميزون - محسن */
-        .authors-section {
-            padding: 6rem 0;
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .authors-section:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%231a5f7a' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
-        }
-        
-        .authors-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 2.5rem;
-        }
-        
-        .author-card {
-            background: white;
-            border-radius: var(--border-radius);
-            padding: 2.5rem 2rem;
-            text-align: center;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            position: relative;
-            overflow: hidden;
-            z-index: 1;
-        }
-        
-        .author-card:before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 100%;
-            height: 0;
-            background: var(--gradient);
-            z-index: -1;
-            transition: height 0.4s ease;
-        }
-        
-        .author-card:hover:before {
-            height: 100%;
-        }
-        
-        .author-card:hover {
-            transform: translateY(-10px);
-            color: white;
-        }
-        
-        .author-card:hover h3,
-        .author-card:hover p {
-            color: white;
-        }
-        
-        .author-avatar {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            margin: 0 auto 1.8rem;
-            background-color: #ddd;
-            background-size: cover;
-            background-position: center;
-            border: 5px solid white;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-            transition: var(--transition);
-        }
-        
-        .author-card:hover .author-avatar {
-            transform: scale(1.05);
-            border-color: var(--accent);
-        }
-        
-        .author-card h3 {
-            margin-bottom: 0.7rem;
-            color: var(--dark);
-            font-size: 1.5rem;
-            font-weight: 700;
-            transition: var(--transition);
-        }
-        
-        .author-card p {
-            color: #666;
-            font-size: 1rem;
-            transition: var(--transition);
-        }
-        
-        /* قسم التطبيق المحسن */
-        .app-section {
-            padding: 6rem 0;
-            background: var(--gradient);
-            color: white;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .app-section:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
-        }
-        
-        .app-content {
-            max-width: 850px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 1;
-        }
-        
-        .app-section h2 {
-            font-size: 3rem;
-            margin-bottom: 1.5rem;
-            font-weight: 800;
-            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        }
-        
-        .app-section p {
-            font-size: 1.4rem;
-            margin-bottom: 3rem;
-            font-weight: 300;
-            opacity: 0.9;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .app-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-        }
-        
-        .app-btn {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            background: rgba(255, 255, 255, 0.95);
-            color: var(--primary);
-            padding: 1.2rem 2.5rem;
-            border-radius: var(--border-radius);
-            text-decoration: none;
-            font-weight: 700;
-            transition: var(--transition);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-            min-width: 220px;
-        }
-        
-        .app-btn:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
-            background: white;
-        }
-        
-        .app-btn i {
-            font-size: 2.2rem;
-        }
-        
-        /* الفوتر المحسن */
-        footer {
-            background-color: #1a2332;
-            color: white;
-            padding: 5rem 0 2.5rem;
-        }
-        
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 3rem;
-            margin-bottom: 4rem;
-        }
-        
-        .footer-column h3 {
-            margin-bottom: 2rem;
-            font-size: 1.5rem;
-            position: relative;
-            padding-bottom: 1rem;
-            font-weight: 700;
-        }
-        
-        .footer-column h3:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 60px;
-            height: 4px;
-            background: var(--accent);
-            border-radius: 2px;
-        }
-        
-        .footer-column p {
-            color: #bbb;
-            line-height: 1.8;
-            margin-bottom: 1.5rem;
-        }
-        
-        .footer-column ul {
-            list-style: none;
-        }
-        
-        .footer-column li {
-            margin-bottom: 1.2rem;
-        }
-        
-        .footer-column a {
-            color: #ddd;
-            text-decoration: none;
-            transition: var(--transition);
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .footer-column a:hover {
-            color: var(--accent);
-            padding-right: 8px;
-        }
-        
-        .social-links {
-            display: flex;
-            gap: 15px;
-            margin-top: 2rem;
-        }
-        
-        .social-links a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 45px;
-            height: 45px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            transition: var(--transition);
-            font-size: 1.2rem;
-        }
-        
-        .social-links a:hover {
-            background: var(--accent);
-            transform: translateY(-5px);
-        }
-        
-        .copyright {
-            text-align: center;
-            padding-top: 2.5rem;
-            border-top: 1px solid #2a3446;
-            font-size: 1rem;
-            color: #aaa;
-        }
-        
-        /* تصميم متجاوب محسن */
-        @media (max-width: 1200px) {
-            .container {
-                max-width: 100%;
-                padding: 0 30px;
-            }
-        }
-        
-        @media (max-width: 992px) {
-            .hero h2 {
-                font-size: 2.7rem;
-            }
-            
-            .section-title {
-                font-size: 2.2rem;
-            }
-            
-            .categories-grid,
-            .content-grid,
-            .authors-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .header-content {
-                flex-wrap: wrap;
-            }
-            
-            nav {
-                order: 3;
-                width: 100%;
-                margin-top: 1.5rem;
-                display: none;
-            }
-            
-            nav.active {
-                display: block;
-                animation: fadeInDown 0.4s ease;
-            }
-            
-            @keyframes fadeInDown {
-                from {
-                    opacity: 0;
-                    transform: translateY(-10px);
-                }
-                to {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            }
-            
-            nav ul {
-                flex-direction: column;
-                gap: 0.5rem;
-                background: rgba(255, 255, 255, 0.1);
-                backdrop-filter: blur(10px);
-                padding: 1rem;
-                border-radius: var(--border-radius);
-            }
-            
-            .mobile-menu-btn {
-                display: block;
-            }
-            
-            .auth-buttons {
-                margin-right: auto;
-                margin-left: 1rem;
-            }
-            
-            .hero h2 {
-                font-size: 2.3rem;
-            }
-            
-            .hero p {
-                font-size: 1.2rem;
-            }
-            
-            .section-title {
-                font-size: 2rem;
-            }
-            
-            .content-header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            
-            .filter-options {
-                width: 100%;
-            }
-            
-            .filter-select {
-                flex-grow: 1;
-                min-width: 140px;
-            }
-        }
-        
-        @media (max-width: 576px) {
-            .hero {
-                padding: 4rem 0;
-            }
-            
-            .hero h2 {
-                font-size: 2rem;
-            }
-            
-            .hero p {
-                font-size: 1.1rem;
-            }
-            
-            .search-box input {
-                padding: 1.2rem 1.5rem;
-                font-size: 1.1rem;
-            }
-            
-            .search-box button {
-                padding: 0.9rem 1.5rem;
-                font-size: 1rem;
-            }
-            
-            .categories,
-            .content-section,
-            .authors-section,
-            .app-section {
-                padding: 4rem 0;
-            }
-            
-            .section-title {
-                font-size: 1.8rem;
-                margin-bottom: 2.5rem;
-            }
-            
-            .categories-grid,
-            .content-grid,
-            .authors-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .app-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .app-btn {
-                width: 100%;
-                max-width: 280px;
-                justify-content: center;
-            }
-            
-            .auth-buttons {
-                display: none;
-            }
-            
-            .footer-content {
-                grid-template-columns: 1fr;
-                gap: 2.5rem;
-            }
-        }
-        
-        /* تأثيرات إضافية */
-        .floating-element {
-            animation: float 6s ease-in-out infinite;
-        }
-        
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-15px); }
-            100% { transform: translateY(0px); }
-        }
-        
-        /* شريط التقدم */
-        .progress-bar {
-            position: fixed;
-            top: 0;
-            right: 0;
-            width: 0%;
-            height: 4px;
-            background: var(--gradient);
-            z-index: 1001;
-            transition: width 0.2s ease;
-        }
-        
-        /* شريط الإشعارات */
-        .notification {
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-            background: white;
-            color: var(--dark);
-            padding: 1.2rem 1.8rem;
-            border-radius: var(--border-radius);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            z-index: 999;
-            transform: translateX(-150%);
-            transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            max-width: 400px;
-        }
-        
-        .notification.active {
-            transform: translateX(0);
-        }
-        
-        .notification i {
-            font-size: 1.5rem;
-            color: var(--accent);
-        }
-        
-        .notification-close {
-            background: none;
-            border: none;
-            color: #999;
-            font-size: 1.2rem;
-            cursor: pointer;
-            margin-right: auto;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Skip Link للوصولية -->
-    <a href="#main-content" class="skip-link sr-only">تخطي إلى المحتوى الرئيسي</a>
+    <a href="#main-content" class="skip-link sr-only" data-translate="skipToMain">تخطي إلى المحتوى الرئيسي</a>
 
     <!-- شريط التقدم -->
     <div class="progress-bar" id="progressBar"></div>
@@ -1140,7 +63,7 @@
             <div class="header-content">
                 <div class="logo">
                     <span class="logo-icon floating-element">📚</span>
-                    <h1>كنز المعرفة</h1>
+                    <h1 data-translate="siteTitle">كنز المعرفة</h1>
                 </div>
                 
                 <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="فتح القائمة الرئيسية">
@@ -1149,29 +72,32 @@
                 
                 <nav id="mainNav">
                     <ul>
-                        <li><a href="#"><i class="fas fa-home"></i> الرئيسية</a></li>
-                        <li><a href="#"><i class="fas fa-headphones"></i> المكتبة الصوتية</a></li>
-                        <li><a href="#"><i class="fas fa-video"></i> المكتبة المرئية</a></li>
-                        <li><a href="#"><i class="fas fa-users"></i> المؤلفون</a></li>
-                        <li><a href="#"><i class="fas fa-list"></i> التصنيفات</a></li>
-                        <li><a href="#"><i class="fas fa-info-circle"></i> من نحن</a></li>
+                        <li><a href="#hero" data-translate="navHome"><i class="fas fa-home"></i> الرئيسية</a></li>
+                        <li><a href="#latest" data-translate="navAudioLibrary"><i class="fas fa-headphones"></i> المكتبة الصوتية</a></li>
+                        <li><a href="#latest" data-translate="navVideoLibrary"><i class="fas fa-video"></i> المكتبة المرئية</a></li>
+                        <li><a href="#authors" data-translate="navAuthors"><i class="fas fa-users"></i> المؤلفون</a></li>
+                        <li><a href="#categories" data-translate="navCategories"><i class="fas fa-list"></i> التصنيفات</a></li>
+                        <li><a href="#app" data-translate="navAbout"><i class="fas fa-info-circle"></i> من نحن</a></li>
                     </ul>
                 </nav>
                 
                 <div class="language-switcher">
-                    <button class="lang-btn active" data-lang="ar">
+                    <button class="lang-btn active" data-lang="ar" data-translate="langArabic">
                         <i class="fas fa-language"></i> العربية
                     </button>
-                    <button class="lang-btn" data-lang="am">
+                    <button class="lang-btn" data-lang="en" data-translate="langEnglish">
+                        <i class="fas fa-language"></i> English
+                    </button>
+                    <button class="lang-btn" data-lang="am" data-translate="langAmharic">
                         <i class="fas fa-language"></i> አማርኛ
                     </button>
                 </div>
                 
                 <div class="auth-buttons">
-                    <button class="btn btn-outline" id="loginBtn" aria-label="تسجيل الدخول إلى حسابك">
+                    <button class="btn btn-outline" id="loginBtn" data-translate="loginBtn" aria-label="تسجيل الدخول إلى حسابك">
                         <i class="fas fa-sign-in-alt"></i> تسجيل الدخول
                     </button>
-                    <button class="btn btn-primary" id="signupBtn" aria-label="إنشاء حساب جديد">
+                    <button class="btn btn-primary" id="signupBtn" data-translate="signupBtn" aria-label="إنشاء حساب جديد">
                         <i class="fas fa-user-plus"></i> إنشاء حساب
                     </button>
                 </div>
@@ -1181,24 +107,27 @@
 
     <!-- قسم الهيرو -->
     <main id="main-content">
-    <section class="hero">
+    <section id="hero">
+        <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="خلفية إسلامية" loading="lazy">
+        </div>
         <div class="container">
-            <h2>كنز المعرفة - منصة المحتوى الإسلامي الشاملة</h2>
-            <p>استمع وشاهد واقرأ آلاف الكتب والمحاضرات الإسلامية باللغتين العربية والأمهرية. منصة متكاملة تجمع بين الأصالة والحداثة.</p>
-            
+            <h2 data-translate="heroTitle">كنز المعرفة - منصة المحتوى الإسلامي الشاملة</h2>
+            <p data-translate="heroDescription">استمع وشاهد واقرأ آلاف الكتب والمحاضرات الإسلامية باللغتين العربية والأمهرية. منصة متكاملة تجمع بين الأصالة والحداثة.</p>
+
             <div class="search-box">
-                <input type="text" id="searchInput" placeholder="ابحث عن كتاب، محاضرة، مؤلف، أو موضوع...">
-                <button id="searchBtn"><i class="fas fa-search"></i> بحث</button>
+                <input type="text" id="searchInput" data-translate="searchPlaceholder" placeholder="ابحث عن كتاب، محاضرة، مؤلف، أو موضوع...">
+                <button id="searchBtn" data-translate="searchBtn"><i class="fas fa-search"></i> بحث</button>
             </div>
             
             <div style="margin-top: 3rem; display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
-                <span style="background: rgba(255,255,255,0.2); padding: 0.5rem 1.2rem; border-radius: 30px; font-size: 0.9rem;">
+                <span style="background: rgba(255,255,255,0.2); padding: 0.5rem 1.2rem; border-radius: 30px; font-size: 0.9rem;" data-translate="booksCount">
                     <i class="fas fa-book"></i> +5,000 كتاب
                 </span>
-                <span style="background: rgba(255,255,255,0.2); padding: 0.5rem 1.2rem; border-radius: 30px; font-size: 0.9rem;">
+                <span style="background: rgba(255,255,255,0.2); padding: 0.5rem 1.2rem; border-radius: 30px; font-size: 0.9rem;" data-translate="lecturesCount">
                     <i class="fas fa-headphones"></i> +10,000 محاضرة
                 </span>
-                <span style="background: rgba(255,255,255,0.2); padding: 0.5rem 1.2rem; border-radius: 30px; font-size: 0.9rem;">
+                <span style="background: rgba(255,255,255,0.2); padding: 0.5rem 1.2rem; border-radius: 30px; font-size: 0.9rem;" data-translate="authorsCount">
                     <i class="fas fa-users"></i> +200 مؤلف
                 </span>
             </div>
@@ -1206,140 +135,284 @@
     </section>
 
     <!-- التصنيفات -->
-    <section class="categories">
+    <section id="categories">
         <div class="container">
-            <h2 class="section-title">التصنيفات الرئيسية</h2>
+            <h2 class="section-title" data-translate="categoriesTitle">التصنيفات الرئيسية</h2>
             
             <div class="categories-grid">
                 <div class="category-card">
                     <div class="category-icon">🕌</div>
-                    <h3>التفسير وعلوم القرآن</h3>
-                    <p>شروحات وتفاسير القرآن الكريم وعلومه</p>
+                    <h3 data-translate="categoryQuranTitle">التفسير وعلوم القرآن</h3>
+                    <p data-translate="categoryQuranDesc">شروحات وتفاسير القرآن الكريم وعلومه</p>
                 </div>
-                
+
                 <div class="category-card">
                     <div class="category-icon">📖</div>
-                    <h3>الحديث وعلومه</h3>
-                    <p>شروحات كتب الحديث والسنة النبوية وعلومها</p>
+                    <h3 data-translate="categoryHadithTitle">الحديث وعلومه</h3>
+                    <p data-translate="categoryHadithDesc">شروحات كتب الحديث والسنة النبوية وعلومها</p>
                 </div>
-                
+
                 <div class="category-card">
                     <div class="category-icon">⚖️</div>
-                    <h3>الفقه وأصوله</h3>
-                    <p>كتب الفقه وأحكام الشرعية</p>
+                    <h3 data-translate="categoryFiqhTitle">الفقه وأصوله</h3>
+                    <p data-translate="categoryFiqhDesc">كتب الفقه وأحكام الشرعية</p>
                 </div>
-                
+
                 <div class="category-card">
                     <div class="category-icon">🕋</div>
-                    <h3>العقيدة والتوحيد</h3>
-                    <p>كتب العقيدة الإسلامية الصحيحة ومذاهبها</p>
+                    <h3 data-translate="categoryAqeedahTitle">العقيدة والتوحيد</h3>
+                    <p data-translate="categoryAqeedahDesc">كتب العقيدة الإسلامية الصحيحة ومذاهبها</p>
                 </div>
-                
+
                 <div class="category-card">
                     <div class="category-icon">💫</div>
-                    <h3>التزكية والأخلاق</h3>
-                    <p>كتب التصوف والسلوك والأخلاق الإسلامية</p>
+                    <h3 data-translate="categoryTazkiyahTitle">التزكية والأخلاق</h3>
+                    <p data-translate="categoryTazkiyahDesc">كتب التصوف والسلوك والأخلاق الإسلامية</p>
                 </div>
-                
+
                 <div class="category-card">
                     <div class="category-icon">🌍</div>
-                    <h3>الدعوة والمناهج</h3>
-                    <p>كتب الدعوة إلى الله والمناهج الدعوية</p>
+                    <h3 data-translate="categoryDaawahTitle">الدعوة والمناهج</h3>
+                    <p data-translate="categoryDaawahDesc">كتب الدعوة إلى الله والمناهج الدعوية</p>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">📜</div>
+                    <h3 data-translate="categoryHistoryTitle">التاريخ الإسلامي</h3>
+                    <p data-translate="categoryHistoryDesc">كتب تاريخ الإسلام والمسلمين والحضارة الإسلامية</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- أحدث الإضافات -->
-    <section class="content-section">
+    <section id="latest">
         <div class="container">
             <div class="content-header">
-                <h2 class="section-title">أحدث الإضافات</h2>
-                
+                <h2 class="section-title" data-translate="latestTitle">أحدث الإضافات</h2>
+
                 <div class="filter-options">
-                    <label for="categoryFilter" class="sr-only">تصفية حسب التصنيف</label>
-                    <select class="filter-select" id="categoryFilter">
-                        <option>جميع التصنيفات</option>
-                        <option>التفسير</option>
-                        <option>الحديث</option>
-                        <option>الفقه</option>
-                        <option>العقيدة</option>
+                    <select class="filter-select" id="categoryFilter" aria-label="تصفية حسب التصنيف">
+                        <option value="all" data-translate="filterAllCategories">جميع التصنيفات</option>
+                        <option value="quran" data-translate="filterQuran">التفسير</option>
+                        <option value="hadith" data-translate="filterHadith">الحديث</option>
+                        <option value="fiqh" data-translate="filterFiqh">الفقه</option>
+                        <option value="aqeedah" data-translate="filterAqeedah">العقيدة</option>
                     </select>
 
-                    <label for="typeFilter" class="sr-only">تصفية حسب النوع</label>
-                    <select class="filter-select" id="typeFilter">
-                        <option>النوع</option>
-                        <option>صوتي</option>
-                        <option>مرئي</option>
-                        <option>نصي</option>
+                    <select class="filter-select" id="typeFilter" aria-label="تصفية حسب النوع">
+                        <option value="all" data-translate="filterType">النوع</option>
+                        <option value="audio" data-translate="filterAudio">صوتي</option>
+                        <option value="video" data-translate="filterVideo">مرئي</option>
+                        <option value="text" data-translate="filterText">نصي</option>
                     </select>
 
-                    <label for="languageFilter" class="sr-only">تصفية حسب اللغة</label>
-                    <select class="filter-select" id="languageFilter">
-                        <option>اللغة</option>
-                        <option>العربية</option>
-                        <option>الأمهرية</option>
+                    <select class="filter-select" id="languageFilter" aria-label="تصفية حسب اللغة">
+                        <option value="all" data-translate="filterLanguage">اللغة</option>
+                        <option value="ar" data-translate="filterArabic">العربية</option>
+                        <option value="en" data-translate="filterEnglish">English</option>
+                        <option value="am" data-translate="langAmharic">አማርኛ</option>
                     </select>
                 </div>
             </div>
             
             <div class="content-grid">
                 <!-- Content Card 1 -->
-                <div class="content-card">
+                <div class="content-card" data-language="ar">
                     <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');" role="img" aria-label="صورة غلاف تفسير القرآن العظيم" loading="lazy" decoding="async">
-                        <span class="content-type"><i class="fas fa-headphones"></i> صوتي</span>
+                        <span class="content-type" data-translate="contentTypeAudio"><i class="fas fa-headphones"></i> صوتي</span>
                     </div>
                     <div class="card-content">
-                        <h3>تفسير القرآن العظيم</h3>
+                        <h3 data-translate="content1Title">تفسير القرآن العظيم</h3>
                         <div class="card-meta">
-                            <span><i class="fas fa-user"></i> ابن حجر</span>
-                            <span><i class="fas fa-clock"></i> 15 ساعة</span>
+                            <span data-translate="content1Author"><i class="fas fa-user"></i> ابن حجر</span>
+                            <span data-translate="content1Duration"><i class="fas fa-clock"></i> 15 ساعة</span>
                         </div>
-                        <p class="card-description">تفسير جامع للقرآن الكريم يعتمد على التفسير بالمأثور، من أهم كتب التفسير بالأثر.</p>
+                        <p class="card-description" data-translate="content1Desc">تفسير جامع للقرآن الكريم يعتمد على التفسير بالمأثور، من أهم كتب التفسير بالأثر.</p>
                         <div class="card-actions">
-                            <button class="action-btn"><i class="fas fa-play"></i> استمع</button>
-                            <button class="action-btn"><i class="fas fa-download"></i> حمل</button>
-                            <button class="action-btn"><i class="fas fa-share-alt"></i> شارك</button>
+                            <button class="action-btn" data-translate="listenBtn"><i class="fas fa-play"></i> استمع</button>
+                            <button class="action-btn" data-translate="downloadBtn"><i class="fas fa-download"></i> حمل</button>
+                            <button class="action-btn" data-translate="shareBtn"><i class="fas fa-share-alt"></i> شارك</button>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Content Card 2 -->
-                <div class="content-card">
+                <div class="content-card" data-language="ar">
                     <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');" role="img" aria-label="صورة غلاف رياض الصالحين" loading="lazy" decoding="async">
-                        <span class="content-type"><i class="fas fa-video"></i> مرئي</span>
+                        <span class="content-type" data-translate="contentTypeVideo"><i class="fas fa-video"></i> مرئي</span>
                     </div>
                     <div class="card-content">
-                        <h3>رياض الصالحين</h3>
+                        <h3 data-translate="content2Title">رياض الصالحين</h3>
                         <div class="card-meta">
-                            <span><i class="fas fa-user"></i> النووي</span>
-                            <span><i class="fas fa-clock"></i> 8 ساعات</span>
+                            <span data-translate="content2Author"><i class="fas fa-user"></i> النووي</span>
+                            <span data-translate="content2Duration"><i class="fas fa-clock"></i> 8 ساعات</span>
                         </div>
-                        <p class="card-description">كتاب يجمع أحاديث النبي صلى الله عليه وسلم في شتى أبواب الخير والفضائل.</p>
+                        <p class="card-description" data-translate="content2Desc">كتاب يجمع أحاديث النبي صلى الله عليه وسلم في شتى أبواب الخير والفضائل.</p>
                         <div class="card-actions">
-                            <button class="action-btn"><i class="fas fa-play"></i> شاهد</button>
-                            <button class="action-btn"><i class="fas fa-download"></i> حمل</button>
-                            <button class="action-btn"><i class="fas fa-share-alt"></i> شارك</button>
+                            <button class="action-btn" data-translate="watchBtn"><i class="fas fa-play"></i> شاهد</button>
+                            <button class="action-btn" data-translate="downloadBtn"><i class="fas fa-download"></i> حمل</button>
+                            <button class="action-btn" data-translate="shareBtn"><i class="fas fa-share-alt"></i> شارك</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Content Card 3 -->
-                <div class="content-card">
+                <div class="content-card" data-language="ar">
                     <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');" role="img" aria-label="صورة غلاف فقه الأكبر" loading="lazy" decoding="async">
-                        <span class="content-type"><i class="fas fa-headphones"></i> صوتي</span>
+                        <span class="content-type" data-translate="contentTypeAudio"><i class="fas fa-headphones"></i> صوتي</span>
                     </div>
                     <div class="card-content">
-                        <h3>فقه الأكبر</h3>
+                        <h3 data-translate="content3Title">فقه الأكبر</h3>
                         <div class="card-meta">
-                            <span><i class="fas fa-user"></i> شيخ جميل حليم</span>
-                            <span><i class="fas fa-clock"></i> 12 ساعة</span>
+                            <span data-translate="content3Author"><i class="fas fa-user"></i> شيخ جميل حليم</span>
+                            <span data-translate="content3Duration"><i class="fas fa-clock"></i> 12 ساعة</span>
                         </div>
-                        <p class="card-description">كتاب في الفقه المعرض الأحكام الفقهية مع أدلتها من الكتاب والسنة.</p>
+                        <p class="card-description" data-translate="content3Desc">كتاب في الفقه المعرض الأحكام الفقهية مع أدلتها من الكتاب والسنة.</p>
                         <div class="card-actions">
-                            <button class="action-btn"><i class="fas fa-play"></i> استمع</button>
-                            <button class="action-btn"><i class="fas fa-download"></i> حمل</button>
-                            <button class="action-btn"><i class="fas fa-share-alt"></i> شارك</button>
+                            <button class="action-btn" data-translate="listenBtn"><i class="fas fa-play"></i> استمع</button>
+                            <button class="action-btn" data-translate="downloadBtn"><i class="fas fa-download"></i> حمل</button>
+                            <button class="action-btn" data-translate="shareBtn"><i class="fas fa-share-alt"></i> شارك</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Card 4 -->
+                <div class="content-card" data-language="ar">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');" role="img" aria-label="صورة غلاف سيرة النبي محمد" loading="lazy" decoding="async">
+                        <span class="content-type" data-translate="contentTypeVideo"><i class="fas fa-video"></i> مرئي</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 data-translate="content4Title">سيرة النبي محمد صلى الله عليه وسلم</h3>
+                        <div class="card-meta">
+                            <span data-translate="content4Author"><i class="fas fa-user"></i> البيهقي</span>
+                            <span data-translate="content4Duration"><i class="fas fa-clock"></i> 20 ساعة</span>
+                        </div>
+                        <p class="card-description" data-translate="content4Desc">سيرة شاملة للنبي محمد صلى الله عليه وسلم منذ ولادته حتى وفاته، مع الدروس والعبر.</p>
+                        <div class="card-actions">
+                            <button class="action-btn" data-translate="watchBtn"><i class="fas fa-play"></i> شاهد</button>
+                            <button class="action-btn" data-translate="downloadBtn"><i class="fas fa-download"></i> حمل</button>
+                            <button class="action-btn" data-translate="shareBtn"><i class="fas fa-share-alt"></i> شارك</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Card 5 -->
+                <div class="content-card" data-language="ar">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');" role="img" aria-label="صورة غلاف العقيدة الطحاوية" loading="lazy" decoding="async">
+                        <span class="content-type" data-translate="contentTypeAudio"><i class="fas fa-headphones"></i> صوتي</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 data-translate="content5Title">العقيدة الطحاوية</h3>
+                        <div class="card-meta">
+                            <span data-translate="content5Author"><i class="fas fa-user"></i> أبو جعفر الطحاوي</span>
+                            <span data-translate="content5Duration"><i class="fas fa-clock"></i> 6 ساعات</span>
+                        </div>
+                        <p class="card-description" data-translate="content5Desc">شرح شامل للعقيدة الإسلامية الصحيحة كما يؤمن بها أهل السنة والجماعة.</p>
+                        <div class="card-actions">
+                            <button class="action-btn" data-translate="listenBtn"><i class="fas fa-play"></i> استمع</button>
+                            <button class="action-btn" data-translate="downloadBtn"><i class="fas fa-download"></i> حمل</button>
+                            <button class="action-btn" data-translate="shareBtn"><i class="fas fa-share-alt"></i> شارك</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Card 6 -->
+                <div class="content-card" data-language="en">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');" role="img" aria-label="صورة غلاف Islamic Fiqh in Modern Times" loading="lazy" decoding="async">
+                        <span class="content-type" data-translate="contentTypeVideo"><i class="fas fa-video"></i> مرئي</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 data-translate="content6Title">Islamic Fiqh in Modern Times</h3>
+                        <div class="card-meta">
+                            <span data-translate="content6Author"><i class="fas fa-user"></i> Dr. Yusuf Al-Qaradawi</span>
+                            <span data-translate="content6Duration"><i class="fas fa-clock"></i> 14 ساعات</span>
+                        </div>
+                        <p class="card-description" data-translate="content6Desc">Contemporary Islamic jurisprudence addressing modern issues and challenges.</p>
+                        <div class="card-actions">
+                            <button class="action-btn" data-translate="watchBtn"><i class="fas fa-play"></i> Watch</button>
+                            <button class="action-btn" data-translate="downloadBtn"><i class="fas fa-download"></i> Download</button>
+                            <button class="action-btn" data-translate="shareBtn"><i class="fas fa-share-alt"></i> Share</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Card 7 -->
+                <div class="content-card" data-language="am">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');" role="img" aria-label="صورة غلاف ኢስላሚክ ሀዲስ በአማርኛ" loading="lazy" decoding="async">
+                        <span class="content-type" data-translate="contentTypeAudio"><i class="fas fa-headphones"></i> ያለው</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 data-translate="content7Title">ኢስላሚክ ሀዲስ በአማርኛ</h3>
+                        <div class="card-meta">
+                            <span data-translate="content7Author"><i class="fas fa-user"></i> ሸይክ አህመድ</span>
+                            <span data-translate="content7Duration"><i class="fas fa-clock"></i> 10 ሰዓታት</span>
+                        </div>
+                        <p class="card-description" data-translate="content7Desc">የኢስላሚክ ሀዲስ ስለ ህይወት እና ምግብ በአማርኛ ቋንቋ የሆነ ስምዕት አውድዮ.</p>
+                        <div class="card-actions">
+                            <button class="action-btn" data-translate="listenBtn"><i class="fas fa-play"></i> ያለው</button>
+                            <button class="action-btn" data-translate="downloadBtn"><i class="fas fa-download"></i> ያውርዱ</button>
+                            <button class="action-btn" data-translate="shareBtn"><i class="fas fa-share-alt"></i> ያካፍሉ</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Card 8 -->
+                <div class="content-card" data-language="ar">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');" role="img" aria-label="صورة غلاف تاريخ الخلفاء الراشدين" loading="lazy" decoding="async">
+                        <span class="content-type" data-translate="contentTypeVideo"><i class="fas fa-video"></i> مرئي</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 data-translate="content8Title">تاريخ الخلفاء الراشدين</h3>
+                        <div class="card-meta">
+                            <span data-translate="content8Author"><i class="fas fa-user"></i> الطبري</span>
+                            <span data-translate="content8Duration"><i class="fas fa-clock"></i> 18 ساعة</span>
+                        </div>
+                        <p class="card-description" data-translate="content8Desc">سيرة الخلفاء الراشدين الأربعة وإنجازاتهم في نشر الإسلام وإقامة العدل.</p>
+                        <div class="card-actions">
+                            <button class="action-btn" data-translate="watchBtn"><i class="fas fa-play"></i> شاهد</button>
+                            <button class="action-btn" data-translate="downloadBtn"><i class="fas fa-download"></i> حمل</button>
+                            <button class="action-btn" data-translate="shareBtn"><i class="fas fa-share-alt"></i> شارك</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Card 9 -->
+                <div class="content-card" data-language="ar">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');" role="img" aria-label="صورة غلاف التصوف الإسلامي" loading="lazy" decoding="async">
+                        <span class="content-type" data-translate="contentTypeAudio"><i class="fas fa-headphones"></i> صوتي</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 data-translate="content9Title">التصوف الإسلامي والأخلاق</h3>
+                        <div class="card-meta">
+                            <span data-translate="content9Author"><i class="fas fa-user"></i> الأشعاري</span>
+                            <span data-translate="content9Duration"><i class="fas fa-clock"></i> 12 ساعة</span>
+                        </div>
+                        <p class="card-description" data-translate="content9Desc">شرح للتصوف الإسلامي الصحيح وكيفية تزكية النفس وتحسين الأخلاق.</p>
+                        <div class="card-actions">
+                            <button class="action-btn" data-translate="listenBtn"><i class="fas fa-play"></i> استمع</button>
+                            <button class="action-btn" data-translate="downloadBtn"><i class="fas fa-download"></i> حمل</button>
+                            <button class="action-btn" data-translate="shareBtn"><i class="fas fa-share-alt"></i> شارك</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Card 10 -->
+                <div class="content-card" data-language="en">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');" role="img" aria-label="صورة غلاف The Quran and Modern Science" loading="lazy" decoding="async">
+                        <span class="content-type" data-translate="contentTypeVideo"><i class="fas fa-video"></i> مرئي</span>
+                    </div>
+                    <div class="card-content">
+                        <h3 data-translate="content10Title">The Quran and Modern Science</h3>
+                        <div class="card-meta">
+                            <span data-translate="content10Author"><i class="fas fa-user"></i> Dr. Zakir Naik</span>
+                            <span data-translate="content10Duration"><i class="fas fa-clock"></i> 8 ساعات</span>
+                        </div>
+                        <p class="card-description" data-translate="content10Desc">Scientific miracles in the Quran and their relevance to modern discoveries.</p>
+                        <div class="card-actions">
+                            <button class="action-btn" data-translate="watchBtn"><i class="fas fa-play"></i> Watch</button>
+                            <button class="action-btn" data-translate="downloadBtn"><i class="fas fa-download"></i> Download</button>
+                            <button class="action-btn" data-translate="shareBtn"><i class="fas fa-share-alt"></i> Share</button>
                         </div>
                     </div>
                 </div>
@@ -1348,61 +421,109 @@
     </section>
 
     <!-- المؤلفون -->
-    <section class="authors-section">
+    <section id="authors">
         <div class="container">
-            <h2 class="section-title">أبرز المؤلفين</h2>
-            
+            <h2 class="section-title" data-translate="authorsTitle">أبرز المؤلفين</h2>
+
             <div class="authors-grid">
                 <div class="author-card">
                     <div class="author-avatar" style="background-image: url('https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');" role="img" aria-label="صورة شيخ عبدالله الهرري" loading="lazy" decoding="async"></div>
-                    <h3>شيخ عبدالله الهرري</h3>
-                    <p>محدث، فقيه، ومفسر</p>
+                    <h3 data-translate="author1Name">شيخ عبدالله الهرري</h3>
+                    <p data-translate="author1Desc">محدث، فقيه، ومفسر</p>
                 </div>
-                
+
                 <div class="author-card">
                     <div class="author-avatar" style="background-image: url('https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');" role="img" aria-label="صورة شيخ جميل حليم" loading="lazy" decoding="async"></div>
-                    <h3>شيخ جميل حليم</h3>
-                    <p>فقيه، ومفسر، وكاتب</p>
+                    <h3 data-translate="author2Name">شيخ جميل حليم</h3>
+                    <p data-translate="author2Desc">فقيه، ومفسر، وكاتب</p>
                 </div>
 
                 <div class="author-card">
                     <div class="author-avatar" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');" role="img" aria-label="صورة شيخ رايا" loading="lazy" decoding="async"></div>
-                    <h3>شيخ رايا</h3>
-                    <p>مفسر، ومحدث، ومؤرخ</p>
+                    <h3 data-translate="author3Name">شيخ رايا</h3>
+                    <p data-translate="author3Desc">مفسر، ومحدث، ومؤرخ</p>
                 </div>
 
                 <div class="author-card">
                     <div class="author-avatar" style="background-image: url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');" role="img" aria-label="صورة النووي" loading="lazy" decoding="async"></div>
-                    <h3>النووي</h3>
-                    <p>فقيه، ومحدث، ولغوي</p>
+                    <h3 data-translate="author4Name">النووي</h3>
+                    <p data-translate="author4Desc">فقيه، ومحدث، ولغوي</p>
+                </div>
+
+                <div class="author-card">
+                    <div class="author-avatar" style="background-image: url('https://images.unsplash.com/photo-1566492031773-4f4e44671d66?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');" role="img" aria-label="صورة أبو حنيفة" loading="lazy" decoding="async"></div>
+                    <h3 data-translate="author5Name">أبو حنيفة</h3>
+                    <p data-translate="author5Desc">عالم إسلامي شامل، فقيه ومتكلم</p>
+                </div>
+
+                <div class="author-card">
+                    <div class="author-avatar" style="background-image: url('https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');" role="img" aria-label="صورة الغزالي" loading="lazy" decoding="async"></div>
+                    <h3 data-translate="author6Name">الغزالي</h3>
+                    <p data-translate="author6Desc">فقيه، ومتكلم، وصوفي</p>
+                </div>
+
+                <div class="author-card">
+                    <div class="author-avatar" style="background-image: url('https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');" role="img" aria-label="صورة الأشعاري" loading="lazy" decoding="async"></div>
+                    <h3 data-translate="author7Name">الأشعاري</h3>
+                    <p data-translate="author7Desc">فقيه، ومحدث، وصوفي</p>
+                </div>
+
+                <div class="author-card">
+                    <div class="author-avatar" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');" role="img" aria-label="صورة الطبري" loading="lazy" decoding="async"></div>
+                    <h3 data-translate="author8Name">الطبري</h3>
+                    <p data-translate="author8Desc">مفسر، ومؤرخ، وفقيه</p>
+                </div>
+
+                <div class="author-card">
+                    <div class="author-avatar" style="background-image: url('https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');" role="img" aria-label="صورة البيهقي" loading="lazy" decoding="async"></div>
+                    <h3 data-translate="author9Name">البيهقي</h3>
+                    <p data-translate="author9Desc">مؤرخ، وكاتب سيرة</p>
+                </div>
+
+                <div class="author-card">
+                    <div class="author-avatar" style="background-image: url('https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');" role="img" aria-label="صورة أبو جعفر الطحاوي" loading="lazy" decoding="async"></div>
+                    <h3 data-translate="author10Name">أبو جعفر الطحاوي</h3>
+                    <p data-translate="author10Desc">فقيه، ومتكلم، ومحدث</p>
+                </div>
+
+                <div class="author-card">
+                    <div class="author-avatar" style="background-image: url('https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');" role="img" aria-label="صورة الشافعي" loading="lazy" decoding="async"></div>
+                    <h3 data-translate="author11Name">الإمام الشافعي</h3>
+                    <p data-translate="author11Desc">إمام المذهب الشافعي، فقيه</p>
+                </div>
+
+                <div class="author-card">
+                    <div class="author-avatar" style="background-image: url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');" role="img" aria-label="صورة مالك بن أنس" loading="lazy" decoding="async"></div>
+                    <h3 data-translate="author12Name">مالك بن أنس</h3>
+                    <p data-translate="author12Desc">إمام المذهب المالكي، محدث</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- قسم التطبيق -->
-    <section class="app-section">
+    <section id="app">
         <div class="container">
             <div class="app-content">
-                <h2>حمّل تطبيق كنز المعرفة</h2>
-                <p>استمتع بتجربة أفضل مع تطبيقنا المخصص للهواتف الذكية. حمّله الآن مجاناً!</p>
-                
+                <h2 data-translate="appTitle">حمّل تطبيق كنز المعرفة</h2>
+                <p data-translate="appDescription">استمتع بتجربة أفضل مع تطبيقنا المخصص للهواتف الذكية. حمّله الآن مجاناً!</p>
+
                 <div class="app-buttons">
-                    <a href="#" class="app-btn">
+                    <button class="app-btn" id="googlePlayBtn">
                         <i class="fab fa-google-play"></i>
                         <div>
-                            <span>حمّله من</span>
-                            <strong>Google Play</strong>
+                            <span data-translate="downloadFrom">حمّله من</span>
+                            <strong data-translate="googlePlay">Google Play</strong>
                         </div>
-                    </a>
-                    
-                    <a href="#" class="app-btn">
+                    </button>
+
+                    <button class="app-btn" id="appStoreBtn">
                         <i class="fab fa-apple"></i>
                         <div>
-                            <span>حمّله من</span>
-                            <strong>App Store</strong>
+                            <span data-translate="downloadFrom">حمّله من</span>
+                            <strong data-translate="appStore">App Store</strong>
                         </div>
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -1415,8 +536,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>كنز المعرفة</h3>
-                    <p>منصة إسلامية شاملة تقدم المحتوى الصوتي والمرئي باللغتين العربية والأمهرية. نسعى لنشر العلم الشرعي بأساليب عصرية.</p>
+                    <h3 data-translate="footerAboutTitle">كنز المعرفة</h3>
+                    <p data-translate="footerAboutDesc">منصة إسلامية شاملة تقدم المحتوى الصوتي والمرئي باللغتين العربية والأمهرية. نسعى لنشر العلم الشرعي بأساليب عصرية.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -1427,39 +548,39 @@
                 </div>
                 
                 <div class="footer-column">
-                    <h3>روابط سريعة</h3>
+                    <h3 data-translate="footerQuickLinksTitle">روابط سريعة</h3>
                     <ul>
-                        <li><a href="#"><i class="fas fa-chevron-left"></i> الرئيسية</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-left"></i> المكتبة الصوتية</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-left"></i> المكتبة المرئية</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-left"></i> المؤلفون</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-left"></i> التصنيفات</a></li>
+                        <li><a href="#" data-translate="footerHome"><i class="fas fa-chevron-left"></i> الرئيسية</a></li>
+                        <li><a href="#" data-translate="footerAudioLibrary"><i class="fas fa-chevron-left"></i> المكتبة الصوتية</a></li>
+                        <li><a href="#" data-translate="footerVideoLibrary"><i class="fas fa-chevron-left"></i> المكتبة المرئية</a></li>
+                        <li><a href="#" data-translate="footerAuthors"><i class="fas fa-chevron-left"></i> المؤلفون</a></li>
+                        <li><a href="#" data-translate="footerCategories"><i class="fas fa-chevron-left"></i> التصنيفات</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-column">
-                    <h3>التصنيفات</h3>
+                    <h3 data-translate="footerCategoriesTitle">التصنيفات</h3>
                     <ul>
-                        <li><a href="#"><i class="fas fa-chevron-left"></i> التفسير وعلوم القرآن</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-left"></i> الحديث وعلومه</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-left"></i> الفقه وأصوله</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-left"></i> العقيدة والتوحيد</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-left"></i> التزكية والأخلاق</a></li>
+                        <li><a href="#" data-translate="footerQuran"><i class="fas fa-chevron-left"></i> التفسير وعلوم القرآن</a></li>
+                        <li><a href="#" data-translate="footerHadith"><i class="fas fa-chevron-left"></i> الحديث وعلومه</a></li>
+                        <li><a href="#" data-translate="footerFiqh"><i class="fas fa-chevron-left"></i> الفقه وأصوله</a></li>
+                        <li><a href="#" data-translate="footerAqeedah"><i class="fas fa-chevron-left"></i> العقيدة والتوحيد</a></li>
+                        <li><a href="#" data-translate="footerTazkiyah"><i class="fas fa-chevron-left"></i> التزكية والأخلاق</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-column">
-                    <h3>اتصل بنا</h3>
+                    <h3 data-translate="footerContactTitle">اتصل بنا</h3>
                     <ul>
-                        <li><a href="#"><i class="fas fa-envelope"></i> info@kanz-almaarifa.com</a></li>
-                        <li><a href="#"><i class="fas fa-phone"></i> +123456789</a></li>
-                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> مكتبة المشاريع</a></li>
+                        <li><a href="#" data-translate="footerEmail"><i class="fas fa-envelope"></i> info@kanz-almaarifa.com</a></li>
+                        <li><a href="#" data-translate="footerPhone"><i class="fas fa-phone"></i> +123456789</a></li>
+                        <li><a href="#" data-translate="footerAddress"><i class="fas fa-map-marker-alt"></i> مكتبة المشاريع</a></li>
                     </ul>
                 </div>
             </div>
-            
+
             <div class="copyright">
-                <p>© 2023 كنز المعرفة - جميع الحقوق محفوظة</p>
+                <p data-translate="footerCopyright">© 2023 كنز المعرفة - جميع الحقوق محفوظة</p>
             </div>
         </div>
     </footer>
@@ -1468,280 +589,80 @@
     <div class="notification" id="notification">
         <i class="fas fa-info-circle"></i>
         <div>
-            <strong>مرحباً بك في كنز المعرفة!</strong>
-            <p>تم تحديث المنصة بميزات جديدة. جرب البحث المتقدم!</p>
+            <strong data-translate="notificationTitle">مرحباً بك في كنز المعرفة!</strong>
+            <p data-translate="notificationMessage">تم تحديث المنصة بميزات جديدة. جرب البحث المتقدم!</p>
         </div>
         <button class="notification-close" id="closeNotification" aria-label="إغلاق الإشعار">
             <i class="fas fa-times"></i>
         </button>
     </div>
 
+    <!-- Modal for Content Viewing -->
+    <div id="contentModal" class="modal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+                <button class="modal-close" id="closeModal" aria-label="إغلاق النافذة">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image" id="modalImage"></div>
+                <div class="modal-meta">
+                    <span id="modalAuthor"></span>
+                    <span id="modalDuration"></span>
+                </div>
+                <p id="modalDescription"></p>
+                <div class="modal-media-placeholder">
+                    <div class="media-placeholder">
+                        <i class="fas fa-play-circle"></i>
+                        <p>المحتوى الإعلامي سيتم عرضه هنا</p>
+                    </div>
+                </div>
+                <div class="modal-actions">
+                    <button class="action-btn" id="modalPlayBtn"><i class="fas fa-play"></i> تشغيل</button>
+                    <button class="action-btn" id="modalDownloadBtn"><i class="fas fa-download"></i> تحميل</button>
+                    <button class="action-btn" id="modalShareBtn"><i class="fas fa-share-alt"></i> مشاركة</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for App Promotion -->
+    <div id="appModal" class="modal" role="dialog" aria-labelledby="appModalTitle" aria-hidden="true">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="appModalTitle" data-translate="appModalTitle">حمّل تطبيق كنز المعرفة</h2>
+                <button class="modal-close" id="closeAppModal" aria-label="إغلاق النافذة">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p data-translate="appModalDescription">استمتع بتجربة أفضل مع تطبيقنا المخصص. احصل على إشعارات بالمحتوى الجديد واستمع دون اتصال بالإنترنت!</p>
+                <div class="app-modal-buttons">
+                    <a href="https://play.google.com/store/apps" class="app-btn" target="_blank" rel="noopener">
+                        <i class="fab fa-google-play"></i>
+                        <div>
+                            <span data-translate="downloadFrom">حمّله من</span>
+                            <strong data-translate="googlePlay">Google Play</strong>
+                        </div>
+                    </a>
+                    <a href="https://apps.apple.com" class="app-btn" target="_blank" rel="noopener">
+                        <i class="fab fa-apple"></i>
+                        <div>
+                            <span data-translate="downloadFrom">حمّله من</span>
+                            <strong data-translate="appStore">App Store</strong>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- عناصر الصوت للإشعارات -->
     <audio id="notificationSound" preload="auto" style="display: none;">
         <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn+DyvmQdBzeP1fLMfCsFJHfH8N2QQAoUXrTp66hVFApGn
 
-    <script>
-        // تحسينات JavaScript
-        document.addEventListener('DOMContentLoaded', function() {
-            // عناصر DOM
-            const header = document.getElementById('mainHeader');
-            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-            const mainNav = document.getElementById('mainNav');
-            const progressBar = document.getElementById('progressBar');
-            const searchBtn = document.getElementById('searchBtn');
-            const searchInput = document.getElementById('searchInput');
-            const loginBtn = document.getElementById('loginBtn');
-            const signupBtn = document.getElementById('signupBtn');
-            const langButtons = document.querySelectorAll('.lang-btn');
-            const notification = document.getElementById('notification');
-            const closeNotification = document.getElementById('closeNotification');
-            const categoryCards = document.querySelectorAll('.category-card');
-            const contentCards = document.querySelectorAll('.content-card');
-            const authorCards = document.querySelectorAll('.author-card');
-            const categoryFilter = document.getElementById('categoryFilter');
-            const typeFilter = document.getElementById('typeFilter');
-            const languageFilter = document.getElementById('languageFilter');
-            
-            // تأثير الهيدر عند التمرير
-            window.addEventListener('scroll', function() {
-                if (window.scrollY > 50) {
-                    header.classList.add('header-scrolled');
-                } else {
-                    header.classList.remove('header-scrolled');
-                }
-                
-                // شريط التقدم
-                const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-                const scrolled = (window.scrollY / windowHeight) * 100;
-                progressBar.style.width = scrolled + '%';
-            });
-            
-            // تبديل القائمة المتنقلة
-            mobileMenuBtn.addEventListener('click', function() {
-                mainNav.classList.toggle('active');
-                mobileMenuBtn.innerHTML = mainNav.classList.contains('active') 
-                    ? '<i class="fas fa-times"></i>' 
-                    : '<i class="fas fa-bars"></i>';
-            });
-            
-            // إغلاق القائمة عند النقر على رابط
-            document.querySelectorAll('#mainNav a').forEach(link => {
-                link.addEventListener('click', () => {
-                    mainNav.classList.remove('active');
-                    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-                });
-            });
-            
-            // تحسين البحث
-            searchBtn.addEventListener('click', function() {
-                if (searchInput.value.trim() !== '') {
-                    // تأثير مرئي للبحث
-                    searchBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> جاري البحث...';
-                    searchBtn.disabled = true;
-                    
-                    setTimeout(() => {
-                        searchBtn.innerHTML = '<i class="fas fa-search"></i> بحث';
-                        searchBtn.disabled = false;
-                        
-                        // إظهار نتيجة البحث
-                        showNotification(`تم البحث عن: "${searchInput.value}"`, 'info');
-                    }, 1500);
-                } else {
-                    showNotification('يرجى إدخال نص للبحث', 'warning');
-                }
-            });
-            
-            // البحث عند الضغط على إنتر
-            searchInput.addEventListener('keypress', function(e) {
-                if (e.key === 'Enter') {
-                    searchBtn.click();
-                }
-            });
-            
-            // تبديل اللغة
-            langButtons.forEach(btn => {
-                btn.addEventListener('click', function() {
-                    // إزالة النشط من جميع الأزرار
-                    langButtons.forEach(b => b.classList.remove('active'));
-                    // إضافة النشط للزر المختار
-                    this.classList.add('active');
-                    
-                    const lang = this.getAttribute('data-lang');
-                    showNotification(`سيتم تغيير اللغة إلى ${this.textContent.trim()}`, 'info');
-                });
-            });
-            
-            // تسجيل الدخول وإنشاء حساب
-            loginBtn.addEventListener('click', () => {
-                showNotification('سيتم فتح نافذة تسجيل الدخول', 'success');
-            });
-            
-            signupBtn.addEventListener('click', () => {
-                showNotification('سيتم فتح نافذة إنشاء حساب جديد', 'success');
-            });
-            
-            // إغلاق الإشعار
-            closeNotification.addEventListener('click', () => {
-                notification.classList.remove('active');
-            });
-            
-            // عرض إشعار بعد تحميل الصفحة
-            setTimeout(() => {
-                notification.classList.add('active');
-            }, 2000);
-            
-            // إغلاق الإشعار تلقائياً بعد 7 ثوان
-            setTimeout(() => {
-                if (notification.classList.contains('active')) {
-                    notification.classList.remove('active');
-                }
-            }, 7000);
-            
-            // وظيفة عرض الإشعارات
-            function showNotification(message, type = 'info') {
-                // في تطبيق حقيقي، سيتم إنشاء عنصر إشعار ديناميكي
-                console.log(`إشعار (${type}): ${message}`);
-
-                // تشغيل صوت الإشعار
-                playNotificationSound();
-
-                // تحديث الإشعار الموجود
-                const notification = document.getElementById('notification');
-                const notificationIcon = notification.querySelector('i');
-                const notificationTitle = notification.querySelector('strong');
-                const notificationText = notification.querySelector('p');
-
-                notificationTitle.textContent = 'إشعار النظام';
-                notificationText.textContent = message;
-
-                // تغيير الأيقونة حسب نوع الإشعار
-                if (type === 'success') {
-                    notificationIcon.className = 'fas fa-check-circle';
-                    notificationIcon.style.color = '#28a745';
-                } else if (type === 'warning') {
-                    notificationIcon.className = 'fas fa-exclamation-triangle';
-                    notificationIcon.style.color = '#ffc107';
-                } else {
-                    notificationIcon.className = 'fas fa-info-circle';
-                    notificationIcon.style.color = '#57C5B6';
-                }
-
-                // إظهار الإشعار
-                notification.classList.add('active');
-
-                // إخفاء الإشعار بعد 5 ثواني
-                setTimeout(() => {
-                    notification.classList.remove('active');
-                }, 5000);
-            }
-
-            // وظيفة تشغيل صوت الإشعار
-            function playNotificationSound() {
-                const audio = document.getElementById('notificationSound');
-                if (audio) {
-                    audio.currentTime = 0; // إعادة تشغيل من البداية
-                    audio.play().catch(error => {
-                        console.log('تعذر تشغيل الصوت:', error);
-                    });
-                }
-            }
-            
-            // إضافة تأثيرات عند التمرير على البطاقات
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -100px 0px'
-            };
-            
-            const observer = new IntersectionObserver(function(entries) {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
-                    }
-                });
-            }, observerOptions);
-            
-            // تطبيق تأثيرات الظهور على البطاقات
-            document.querySelectorAll('.category-card, .content-card, .author-card').forEach(card => {
-                card.style.opacity = '0';
-                card.style.transform = 'translateY(30px)';
-                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-                observer.observe(card);
-            });
-            
-            // تحسين تجربة النقر على البطاقات
-            categoryCards.forEach(card => {
-                card.addEventListener('click', function() {
-                    this.style.transform = 'translateY(-12px) scale(1.02)';
-                    setTimeout(() => {
-                        this.style.transform = 'translateY(-12px)';
-                    }, 150);
-                    
-                    const category = this.querySelector('h3').textContent;
-                    showNotification(`جارٍ فتح تصنيف: ${category}`, 'info');
-                });
-            });
-            
-            // تأثيرات النقر على بطاقات المحتوى
-            contentCards.forEach(card => {
-                const playBtn = card.querySelector('.fa-play')?.closest('.action-btn');
-                const downloadBtn = card.querySelector('.fa-download')?.closest('.action-btn');
-                const shareBtn = card.querySelector('.fa-share-alt')?.closest('.action-btn');
-                
-                if (playBtn) {
-                    playBtn.addEventListener('click', function(e) {
-                        e.stopPropagation();
-                        const title = card.querySelector('h3').textContent;
-                        showNotification(`جارٍ تشغيل: ${title}`, 'success');
-                    });
-                }
-                
-                if (downloadBtn) {
-                    downloadBtn.addEventListener('click', function(e) {
-                        e.stopPropagation();
-                        const title = card.querySelector('h3').textContent;
-                        showNotification(`جارٍ تحميل: ${title}`, 'success');
-                    });
-                }
-                
-                if (shareBtn) {
-                    shareBtn.addEventListener('click', function(e) {
-                        e.stopPropagation();
-                        const title = card.querySelector('h3').textContent;
-                        showNotification(`مشاركة: ${title}`, 'info');
-                    });
-                }
-                
-                // النقر على البطاقة نفسها
-                card.addEventListener('click', function() {
-                    const title = this.querySelector('h3').textContent;
-                    showNotification(`فتح محتوى: ${title}`, 'info');
-                });
-            });
-            
-            // تحسين المرشحات
-            [categoryFilter, typeFilter, languageFilter].forEach(filter => {
-                filter.addEventListener('change', function() {
-                    const category = categoryFilter.value;
-                    const type = typeFilter.value;
-                    const language = languageFilter.value;
-                    
-                    showNotification(`تم التصفية حسب: ${category} - ${type} - ${language}`, 'info');
-                });
-            });
-            
-            // تحسين أداء الصور
-            document.querySelectorAll('.card-image, .author-avatar').forEach(img => {
-                img.style.backgroundSize = 'cover';
-                img.style.backgroundPosition = 'center';
-                img.style.backgroundRepeat = 'no-repeat';
-            });
-        });
-        
-        // تأثيرات تحميل الصفحة
-        window.addEventListener('load', function() {
-            document.body.classList.add('loaded');
-        });
-    </script>
+    <script src="script.js" defer></script>
 </body>
 </html>
